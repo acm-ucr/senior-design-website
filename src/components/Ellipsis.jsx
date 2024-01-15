@@ -1,5 +1,13 @@
+import React from "react";
+import { VscEllipsis } from "react-icons/vsc";
+
 const Ellipsis = () => {
-  return <>ellipsis icon</>;
+  return (
+    <button>
+      <VscEllipsis />
+    </button>
+  );
 };
 
 export default Ellipsis;
+<VscEllipsis />;
