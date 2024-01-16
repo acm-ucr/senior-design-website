@@ -1,42 +1,11 @@
 const Footer = () => {
   return (
-    <div
-      className="Footer"
-      style={{ textAlign: "center", background: "#daf0ff" }}
-    >
-      <div
-        className="UCR"
-        style={{
-          fontSize: "28px",
-          fontWeight: "bold",
-          color: "orange",
-          display: "inline",
-        }}
-      >
-        UCR{" "}
-      </div>
-      <div
-        className="Senior Designs"
-        style={{
-          fontSize: "28px",
-          fontWeight: "bold",
-          display: "inline",
-          margin: "0.25px",
-        }}
-      >
-        Senior Designs{" "}
-      </div>
-      <div
-        className="Copyright"
-        style={{
-          fontSize: "12px",
-          margin: "0.25px",
-        }}
-      >
-        Copyright © ACM UCR - All Rights Reserved.{" "}
-      </div>
+    <div className="text-center bg-[#daf0ff] m-5">
+      <p className="mt-4 text-yellow-400 font-bold text-2xl inline-block"> UCR</p>
+      <p className="inline-block ml-2 font-bold text-2xl text-gray-700">Senior Designs</p>
+      <p className="text-xs mb-12">Copyright © ACM UCR - All Rights Reserved.</p>
     </div>
   );
-};
+}
 
 export default Footer;
