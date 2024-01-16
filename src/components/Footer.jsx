@@ -5,9 +5,7 @@ const Footer = () => {
         {" "}
         UCR
       </p>
-      <p className="inline-block ml-2 font-bold text-2xl">
-        Senior Designs
-      </p>
+      <p className="inline-block ml-2 font-bold text-2xl">Senior Designs</p>
       <p className="text-xs mb-12">
         Copyright © ACM UCR - All Rights Reserved.
       </p>
