@@ -12,6 +12,7 @@ module.exports = {
         senior: {
           "blue-100": "#EAF5F8",
           "blue-200": "#8EC5D5",
+          "blue-300": "#B7E3F0",
           "yellow-100": "#FFC633",
           "purple-100": "#3C3E64",
           "white-100": "#FFFFFF",
