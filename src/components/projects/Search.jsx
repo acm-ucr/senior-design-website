@@ -22,7 +22,7 @@ const Search = () => {
             <input
               type="text"
               placeholder="Project Name"
-              className="rounded-lg w-full px-10"
+              className="rounded-lg w-full px-10 border border-black"
               value={inputValue}
               onChange={handleChange}
             />
