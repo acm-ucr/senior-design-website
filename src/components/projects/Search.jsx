@@ -1,6 +1,7 @@
-"use client"; // This is a client component
+"use client";
 
 import { useState } from "react";
+import { CiSearch } from "react-icons/ci";
 
 const Search = () => {
   const [inputValue, setInputValue] = useState("");
@@ -14,17 +15,20 @@ const Search = () => {
   };
   return (
     <div className="flex justify-center">
-      <form className="w-3/4" onSubmit={handleSubmit}>
-        <label>
-          <input
-            type="search"
-            placeholder="Project Name"
-            className="rounded-lg w-full px-4"
-            value={inputValue}
-            onChange={handleChange}
-          />
-        </label>
-      </form>
+      <div className="relative w-3/4">
+        <form onSubmit={handleSubmit}>
+          <label>
+            <CiSearch className="absolute left-3 top-1" />
+            <input
+              type="text"
+              placeholder="Project Name"
+              className="rounded-lg w-full px-10"
+              value={inputValue}
+              onChange={handleChange}
+            />
+          </label>
+        </form>
+      </div>
     </div>
   );
 };
