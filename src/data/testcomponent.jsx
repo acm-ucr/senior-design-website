@@ -1,9 +1,9 @@
 // testComponent.js
-import React from 'react';
-import FakeData from './data/fakeData';  
-import ProjectCard from './data/ProjectCard';  
+import React from "react";
+import FakeData from "@/data/fakedata";
+import ProjectCard from "@/data/projectcard";
 
-const testComponent = () => {
+const TestComponent = () => {
   return (
     <div>
       {FakeData.map((project, index) => (
@@ -13,4 +13,4 @@ const testComponent = () => {
   );
 };
 
-export default testComponent;
+export default TestComponent;
