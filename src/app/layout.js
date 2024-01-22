@@ -1,6 +1,8 @@
 /* eslint-disable new-cap */
 import "./globals.css";
 import { Raleway } from "next/font/google";
+import Navigation from "@/components/Navigation";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -15,7 +17,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${raleway.className} flex flex-col lg:flex-row h-full text-senior-purple-100`}
       >
-        {children}
+        <Navigation />
+        <div className="w-full mt-14 md:mt-16">{children}</div>
       </body>
     </html>
   );
