@@ -9,6 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "buttons-orange": "#FFC633",
+        "buttons-blue": "#8EC5D5",
         senior: {
           "blue-100": "#EAF5F8",
           "blue-200": "#8EC5D5",
