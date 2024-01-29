@@ -1,8 +1,13 @@
 import Image from "next/image";
-import Bourns_Building from "@/public/Bourns_Building.png";
+import bournsBuilding from "@/public/Bourns_Building.png";
 const Welcome = () => {
   return (
-    <Image src={Bourns_Building} width="100%" height="100%" alt="bourns building" />
+    <Image
+      src={bournsBuilding}
+      width="100%"
+      height="100%"
+      alt="bourns building"
+    />
   );
 };
 
