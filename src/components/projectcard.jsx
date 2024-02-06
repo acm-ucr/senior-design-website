@@ -26,30 +26,30 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="w-full sm:w-1/3 flex-col justify-center items-center shadow-2xl max-w-xs rounded-md">
-      
+    <div className="flex-col justify-self-center justify-center items-center shadow-2xl w-96  rounded-md md:w-5/6 lg:w-5/6  sm:w-5/6">
       <Image
         src={icon}
         alt={projectName}
         className="project-image self-center mx-auto "
-        width= {200}
+        width={200}
         height={225}
-        style={{ alignSelf: 'center' }}
+        style={{ alignSelf: "center" }}
       />
-      
 
       <div className="project-details text-center">
         <h2 className="project-name text-2xl font-bold">{projectName}</h2>
 
-        <div className="flex flex-row justify-center items-center text-center">
+        <div className="flex flex-row justify-center items-center text-center ">
           <Image
             src={iconMap[projectType]}
             alt={projectType}
             width={21}
             height={21}
-            className="projectypeimage"
+            className="projectypeimage justify-center items-center"
           />
-          <p className="text-base">{projectType}</p>
+          <p className="text-base justify-center items-center 	mb-0">
+            {projectType}
+          </p>
         </div>
 
         <p className="text-gray-200  mt-1">{year}</p>
@@ -58,7 +58,7 @@ const ProjectCard = ({ project }) => {
           <p className="collaborators-text">{names.join(", ")}</p>
         </div>
 
-        <p className="project-description text-sm overflow-hidden max-w-xs">
+        <p className="project-description text-sm  max-w-xs mb-0 display: inline">
           {description}
         </p>
       </div>
