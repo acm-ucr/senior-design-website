@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-function Support({ list, checkedcolor }) {
+function MakeList({ list, checkedcolor }) {
   return (
     <div className="border-2 rounded-md border-gray-500 mt-1">
       {list.map(function (data) {
@@ -62,24 +62,27 @@ const Filterbuttons = () => {
         {open && !open1 ? (
           <button
             onClick={handleOpen}
-            className="border-2 border-blue-500 rounded-lg p-0.5"
+            className="border-2 border-buttons-blue rounded-md px-2"
           >
             <div className="flex flex-row p-0.5">
-              <p className="text-blue-400 mr-5 ml-1"> {"year"} </p>
+              <div className="text-buttons-blue mr-4"> {"year"} </div>
               <IoIosArrowUp className="mt-1" />
             </div>
           </button>
         ) : (
-          <button onClick={handleOpen} className="bg-gray-200 rounded-md p-0.5">
-            <div className="flex flex-row p-0.5">
-              <p className="text-gray-500 mr-5 ml-1"> {"year"} </p>
+          <button
+            onClick={handleOpen}
+            className="bg-gray-200 rounded-md px-2 py-1"
+          >
+            <div className="flex flex-row">
+              <div className="text-gray-500 mr-4"> {"year"} </div>
               <IoIosArrowDown className="mt-1" />
             </div>
           </button>
         )}
 
         {open && !open1 ? (
-          <Support
+          <MakeList
             list={["2022-23", "2023-24", "2024-25"]}
             checkedcolor={"checked:bg-sky-300"}
           />
@@ -92,29 +95,29 @@ const Filterbuttons = () => {
         {open1 && !open ? (
           <button
             onClick={handleOpen1}
-            className="border-2 border-orange-300 rounded-lg p-0.5"
+            className="border-2 border-buttons-orange rounded-md px-2"
           >
             <div className="flex flex-row p-0.5">
-              <p className="text-orange-300 mr-5 ml-1"> {"type"} </p>
+              <div className="text-buttons-orange mr-4"> {"type"} </div>
               <IoIosArrowUp className="mt-1" />
             </div>
           </button>
         ) : (
           <button
             onClick={handleOpen1}
-            className="bg-gray-200 rounded-md p-0.5"
+            className="bg-gray-200 rounded-md px-2 py-1"
           >
-            <div className="flex flex-row p-0.5">
-              <p className="text-gray-500 mr-5 ml-1"> {"type"} </p>
+            <div className="flex flex-row">
+              <div className="text-gray-500 mr-4"> {"type"} </div>
               <IoIosArrowDown className="mt-1" />
             </div>
           </button>
         )}
 
         {open1 && !open ? (
-          <Support
+          <MakeList
             list={["Operating Systems", "Compiler", "Database"]}
-            checkedcolor={"checked:bg-orange-300"}
+            checkedcolor={"checked:bg-buttons-orange"}
           />
         ) : (
           <div></div>
