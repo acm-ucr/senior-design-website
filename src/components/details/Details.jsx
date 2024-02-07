@@ -1,9 +1,17 @@
 import img1 from "../../../public/tempimage.png";
 import Image from "next/image";
+import Title from "./Title";
 
 const Details = () => {
   return (
     <div className="bg-white px-8 md:px-64">
+      <Title
+        year="2023-2024"
+        projectName="Project Name"
+        teamMembers="Minnie Bennet, Chadwick Clayton, Ralph Hayes, Bertha Meza"
+        type="Operating System"
+        logo="oslogo"
+      />
       <div className="flex items-center gap-1">
         <div className="bg-senior-yellow-100 h-5 w-1" />
         <p className="font-bold text-lg pt-3">Inspiration</p>
