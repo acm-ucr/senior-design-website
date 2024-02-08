@@ -22,17 +22,15 @@ const logos = {
   otherslogo,
 };
 
-const Title = ({ type, logo }) => {
+const Title = ({ year, projectName, teamMembers, type, logo }) => {
   return (
-    <div className="px-10">
-      <div className="text-yellow-500 font-bold text-xl pb-1">2023 - 2024</div>
-      <div className="text-senior-purple-100 font-bold text-3xl pb-1">
-        Project Name
-      </div>
-      <div className="text-senior-gray-100 text-normal pb-1">
-        by Minnie Bennet, Chadwick Clayton, Ralph Hayes, Bertha Meza
-      </div>
-      <div className="flex pb-1">
+    <div className="mt-5 px-15">
+      <p className="text-yellow-500 font-bold text-xl mb-1">{year}</p>
+      <p className="text-senior-purple-100 font-bold text-3xl mb-1">
+        {projectName}
+      </p>
+      <p className="text-senior-gray-100 text-normal mb-1">by {teamMembers}</p>
+      <div className="flex items-baseline">
         <Image
           src={logos[logo]}
           width={22}
@@ -40,20 +38,20 @@ const Title = ({ type, logo }) => {
           alt="{logo}"
           className="pr-1"
         />
-        <div className="text-senior-purple-100 text-sm">{type}</div>
+        <p className="text-senior-purple-100 text-sm mb-1">{type}</p>
       </div>
-      <div className="flex">
+      <div className="flex pb-5">
         <div className="flex border-2 rounded">
           <FaGithub className="mt-1 mx-2" />
-          <div className="flex-shrink-0 pr-1">Github</div>
+          <p className="flex-shrink-0 pr-1">Github</p>
         </div>
         <div className="flex border-2 rounded mx-2">
           <FaFigma className="mt-1 mx-2" />
-          <div className="flex-shrink-0 pr-1">Figma</div>
+          <p className="flex-shrink-0 pr-1">Figma</p>
         </div>
         <div className="flex border-2 rounded">
           <IoIosLink className="mt-1 mx-2" />
-          <div className="flex-shrink-0 pr-1">Link</div>
+          <p className="flex-shrink-0 pr-1">Link</p>
         </div>
       </div>
     </div>
