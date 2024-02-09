@@ -33,7 +33,7 @@ const Navigation = () => {
         id="navbar-nav"
         className="items-center justify-end md:mr-8 flex"
       >
-        <Nav className="flex items-centerw-auto">
+        <Nav className="flex items-center w-auto">
           <Nav.Link
             as={Link}
             href="/projects"
