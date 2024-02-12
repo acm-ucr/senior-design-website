@@ -11,7 +11,7 @@ const raleway = Raleway({
   variable: "--font-nunito",
 });
 
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable-next-line no-unused-vars */
 const Footer = () => {
   return (
     <div className="text-center bg-[#eaf5f8] m-5">
@@ -31,10 +31,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${raleway.className} flex flex-col lg:flex-row h-full text-senior-purple-100`}
+        className={`${raleway.className} flex flex-col min-h-screen text-senior-purple-100`}
       >
-        <Navigation />
-        <div className="w-full mt-14 md:mt-16">{children}</div>
+        <div className="flex-grow">
+          <Navigation />
+          <div className="w-full mt-14 md:mt-16">{children}</div>
+        </div>
+        <Footer />
       </body>
     </html>
   );
