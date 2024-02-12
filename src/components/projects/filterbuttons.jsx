@@ -77,7 +77,7 @@ const Filterbuttons = ({
   };
 
   return (
-    <div className="flex flex-row gap-1 px-4">
+    <div className="flex flex-row gap-1 justify-center pr-48 -ml-2 md:pr-96 md:-ml-14">
       <div>
         {open && !open1 ? (
           <button

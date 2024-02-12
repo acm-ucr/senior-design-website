@@ -35,7 +35,7 @@ const Search = ({ selectedYears = [], selectedTypes = [] }) => {
             selectedYears.map((year) => (
               <span
                 key={year}
-                className="bg-gray-200 rounded-full px-2 py-1 mr-2 mb-2"
+                className="bg-white border-1 border-buttons-blue rounded-md text-buttons-blue px-2 py-1 mr-2 mb-2"
               >
                 {year}
               </span>
@@ -44,7 +44,7 @@ const Search = ({ selectedYears = [], selectedTypes = [] }) => {
             selectedTypes.map((type) => (
               <span
                 key={type}
-                className="bg-gray-200 rounded-full px-2 py-1 mr-2 mb-2"
+                className="bg-white border-1 border-buttons-orange text-buttons-orange rounded-md px-2 py-1 mr-2 mb-2"
               >
                 {type}
               </span>
