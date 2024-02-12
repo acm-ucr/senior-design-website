@@ -1,17 +1,18 @@
 "use client";
 import { useState } from "react";
-
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-function MakeList({ list, checkedcolor }) {
+function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
   return (
     <div className="border-2 rounded-md border-gray-500 mt-1">
       {list.map(function (data) {
         return (
-          <div className="flex flex-row gap-2 m-2" key={0}>
+          <div className="flex flex-row gap-2 m-2" key={data}>
             <input
               type="checkbox"
-              className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm  mt-1 ${checkedcolor}`}
+              className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm mt-1 ${checkedcolor}`}
+              onChange={() => handleSelection(data)}
+              checked={selectedItems.includes(data)}
             />
 
             {data}
@@ -25,9 +26,9 @@ function MakeList({ list, checkedcolor }) {
               viewBox="0 0 24 24"
               fill="none"
               stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -38,26 +39,45 @@ function MakeList({ list, checkedcolor }) {
   );
 }
 
-const Filterbuttons = () => {
+const Filterbuttons = ({
+  selectedYears,
+  selectedTypes,
+  onYearSelect,
+  onTypeSelect,
+}) => {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
 
+  const handleYearSelection = (year) => {
+    const updatedYears = selectedYears.includes(year)
+      ? selectedYears.filter((item) => item !== year)
+      : [...selectedYears, year];
+    onYearSelect(updatedYears);
+  };
+
+  const handleTypeSelection = (type) => {
+    const updatedTypes = selectedTypes.includes(type)
+      ? selectedTypes.filter((item) => item !== type)
+      : [...selectedTypes, type];
+    onTypeSelect(updatedTypes);
+  };
+
   const handleOpen = () => {
-    if (open1 == true && open == false) {
+    if (open1 === true && open === false) {
       setOpen1(false);
     }
     setOpen(!open);
   };
 
   const handleOpen1 = () => {
-    if (open == true && open1 == false) {
+    if (open === true && open1 === false) {
       setOpen(false);
     }
     setOpen1(!open1);
   };
 
   return (
-    <div className="flex flex-row gap-1">
+    <div className="flex flex-row gap-1 px-4">
       <div>
         {open && !open1 ? (
           <button
@@ -85,6 +105,8 @@ const Filterbuttons = () => {
           <MakeList
             list={["2022-23", "2023-24", "2024-25"]}
             checkedcolor={"checked:bg-sky-300"}
+            handleSelection={handleYearSelection}
+            selectedItems={selectedYears}
           />
         ) : (
           <div></div>
@@ -118,6 +140,8 @@ const Filterbuttons = () => {
           <MakeList
             list={["Operating Systems", "Compiler", "Database"]}
             checkedcolor={"checked:bg-buttons-orange"}
+            handleSelection={handleTypeSelection}
+            selectedItems={selectedTypes}
           />
         ) : (
           <div></div>
