@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="flex-col justify-self-center justify-center items-center shadow-2xl w-96  rounded-md md:w-5/6 lg:w-5/6  sm:w-5/6">
+    <div className="flex-col justify-self-center justify-center items-center shadow-2xl  min-w-96 h-full w-96  rounded-md md:w-5/6 lg:w-7/12   sm:w-5/6">
       <Image
         src={icon}
         alt={projectName}
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
       />
 
       <div className="project-details text-center">
-        <h2 className="project-name text-2xl font-bold">{projectName}</h2>
+        <h2 className="project-name text-2xl font-bold mt-2">{projectName}</h2>
 
         <div className="flex flex-row justify-center items-center text-center ">
           <Image
@@ -47,20 +47,23 @@ const ProjectCard = ({ project }) => {
             height={21}
             className="projectypeimage justify-center items-center"
           />
-          <p className="text-base justify-center items-center 	mb-0">
-            {projectType}
-          </p>
+          <div className="ml-1.5">
+            <p className="text-base justify-center items-center m	mb-0">
+              {projectType}
+            </p>
+          </div>
         </div>
 
-        <p className="text-gray-200  mt-1">{year}</p>
+        <p className="text-gray-400  mt-1">{year}</p>
 
-        <div className="collaborators text-sm text-gray-200">
+        <div className="collaborators text-sm text-gray-400">
           <p className="collaborators-text">{names.join(", ")}</p>
         </div>
-
-        <p className="project-description text-sm  max-w-xs mb-0 display: inline">
-          {description}
-        </p>
+        <div className="max-w-xs mx-auto mb-4 ">
+          <p className="project-description text-sm   display: inline ">
+            {description}
+          </p>
+        </div>
       </div>
     </div>
   );
