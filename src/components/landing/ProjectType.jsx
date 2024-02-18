@@ -23,12 +23,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={emblogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="emblogo"
-              className="-ml-12 md:-ml-12"
+              className="-ml-12 md:-ml-20"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               EMBEDDED
               <br />
               SYSTEMS
@@ -40,12 +40,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={databaselogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="databaselogo"
-              className="-ml-8 md:-ml-8"
+              className="-ml-8 md:-ml-12"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               DATABASE
             </p>
           </Link>
@@ -55,12 +55,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={networklogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="networklogo"
-              className="-ml-12 md:-ml-10"
+              className="-ml-12 md:-ml-20"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               NETWORK
             </p>
           </Link>
@@ -70,12 +70,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={electroniclogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="electroniclogo"
-              className="-ml-6 md:-ml-6"
+              className="-ml-6 md:-ml-12"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               ELECTRONIC
               <br />
               GAME
@@ -87,12 +87,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={compilerlogo.src}
-              width={170}
+              width={275}
               height={225}
               alt="compilerlogo"
-              className="-ml-8 -mb-6 md:-ml-8 md:-mb-6"
+              className="-ml-8 -mb-6 md:-ml-12 md:-mb-6"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               COMPILER
             </p>
           </Link>
@@ -102,12 +102,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={oslogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="oslogo"
-              className="-ml-8 md:-ml-8"
+              className="-ml-8 md:-ml-12"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               OPERATING
               <br />
               SYSTEMS
@@ -119,12 +119,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={ailogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="ailogo"
-              className="-ml-8 md:-ml-8"
+              className="-ml-8 md:-ml-12"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               ARTIFICIAL
               <br />
               INTELLIGENCE
@@ -136,12 +136,12 @@ const ProjectTypes = () => {
           >
             <Image
               src={otherslogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="otherslogo"
-              className="-ml-10 -mb-6 md:-ml-10 md:-mb-6"
+              className="-ml-10 -mb-6 md:-ml-20 md:-mb-6"
             />
-            <p className="text-white text-2xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
+            <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               OTHERS
             </p>
           </Link>
