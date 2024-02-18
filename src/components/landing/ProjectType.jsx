@@ -19,7 +19,7 @@ const ProjectTypes = () => {
         <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-12">
           <Link
             href="/projects"
-            className="bg-projects-emb-100 rounded-xl relative overflow-hidden flex p-3 min-w-60 max-w-60 h-60"
+            className="bg-projects-emb-100 rounded-xl relative overflow-hidden flex p-3 min-w-80 max-w-80 h-80"
           >
             <Image
               src={emblogo.src}
@@ -36,7 +36,7 @@ const ProjectTypes = () => {
           </Link>
           <Link
             href="/projects"
-            className="bg-projects-database-100 rounded-xl relative overflow-hidden flex p-3 min-w-60 max-w-60 h-60 "
+            className="bg-projects-database-100 rounded-xl relative overflow-hidden flex p-3 min-w-80 max-w-80 h-80 "
           >
             <Image
               src={databaselogo.src}
@@ -51,7 +51,7 @@ const ProjectTypes = () => {
           </Link>
           <Link
             href="/projects"
-            className="bg-projects-network-100 rounded-xl relative overflow-hidden flex p-3 min-w-60 max-w-60 h-60"
+            className="bg-projects-network-100 rounded-xl relative overflow-hidden flex p-3 min-w-80 max-w-80 h-80"
           >
             <Image
               src={networklogo.src}
@@ -66,7 +66,7 @@ const ProjectTypes = () => {
           </Link>
           <Link
             href="/projects"
-            className="bg-projects-game-100 rounded-xl relative overflow-hidden flex p-2 min-w-60 max-w-60 h-60"
+            className="bg-projects-game-100 rounded-xl relative overflow-hidden flex p-2 min-w-80 max-w-80 h-80"
           >
             <Image
               src={electroniclogo.src}
@@ -83,7 +83,7 @@ const ProjectTypes = () => {
           </Link>
           <Link
             href="/projects"
-            className="bg-projects-compiler-100 rounded-xl relative overflow-hidden flex p-3 min-w-60 max-w-60 h-60"
+            className="bg-projects-compiler-100 rounded-xl relative overflow-hidden flex p-3 min-w-80 max-w-80 h-80"
           >
             <Image
               src={compilerlogo.src}
@@ -98,7 +98,7 @@ const ProjectTypes = () => {
           </Link>
           <Link
             href="/projects"
-            className="bg-projects-operating-100 rounded-xl relative overflow-hidden flex min-w-60 max-w-60 h-60"
+            className="bg-projects-operating-100 rounded-xl relative overflow-hidden flex min-w-80 max-w-80 h-80"
           >
             <Image
               src={oslogo.src}
@@ -115,7 +115,7 @@ const ProjectTypes = () => {
           </Link>
           <Link
             href="/projects"
-            className="bg-projects-ai-100 rounded-xl relative overflow-hidden flex p-2 min-w-60 max-w-60 h-60"
+            className="bg-projects-ai-100 rounded-xl relative overflow-hidden flex p-2 min-w-80 max-w-80 h-80"
           >
             <Image
               src={ailogo.src}
@@ -132,7 +132,7 @@ const ProjectTypes = () => {
           </Link>
           <Link
             href="/projects"
-            className="bg-projects-others-100 rounded-xl relative overflow-hidden flex p-2 min-w-60 max-w-60 h-60"
+            className="bg-projects-others-100 rounded-xl relative overflow-hidden flex p-2 min-w-80 max-w-80 h-80"
           >
             <Image
               src={otherslogo.src}
