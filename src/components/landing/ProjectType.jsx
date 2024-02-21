@@ -76,9 +76,7 @@ const ProjectTypes = () => {
               className="-ml-6 md:-ml-6"
             />
             <p className="text-white text-xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
-              ELECTRONIC
-              <br />
-              GAME
+              GRAPHICS
             </p>
           </Link>
           <Link
