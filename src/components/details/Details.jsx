@@ -3,9 +3,7 @@ import Title from "./Title";
 import img1 from "../../../public/tempimage.png";
 import img2 from "../../../public/image1.png";
 
-const Details = ({ FakeDataDetails }) => {
-  const { year, projectName, teamMembers, type, logo } = FakeDataDetails;
-
+const Details = ({ year, projectName, teamMembers, type, logo }) => {
   return (
     <div className="bg-white px-0 md:px-0">
       <div className="relative h-96 w-full">
