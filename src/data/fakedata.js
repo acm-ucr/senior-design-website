@@ -13,7 +13,7 @@ const FakeData = [
   {
     projectName: "Name",
     icon: databaselogo,
-    projectType: "Database",
+    projectType: "Embedded Systems",
     year: 2024,
     names: ["Steve", "Sarah"],
     description:
@@ -22,7 +22,7 @@ const FakeData = [
   {
     projectName: "Name",
     icon: databaselogo,
-    projectType: "Database",
+    projectType: "Operating Systems",
     year: 2024,
     names: ["Steve", "Sarah"],
     description:
@@ -31,7 +31,7 @@ const FakeData = [
   {
     projectName: "Name",
     icon: databaselogo,
-    projectType: "Database",
+    projectType: "Electronic Game",
     year: 2024,
     names: ["Steve", "Sarah"],
     description:
@@ -40,7 +40,7 @@ const FakeData = [
   {
     projectName: "Name",
     icon: databaselogo,
-    projectType: "Database",
+    projectType: "Others",
     year: 2024,
     names: ["Steve", "Sarah"],
     description:
@@ -49,7 +49,7 @@ const FakeData = [
   {
     projectName: "Name",
     icon: databaselogo,
-    projectType: "Database",
+    projectType: "Artificial Intelligence",
     year: 2024,
     names: ["Steve", "Sarah"],
     description:
@@ -58,7 +58,7 @@ const FakeData = [
   {
     projectName: "Name",
     icon: databaselogo,
-    projectType: "Database",
+    projectType: "Compiler",
     year: 2024,
     names: ["Steve", "Sarah"],
     description:
