@@ -16,7 +16,7 @@ const ProjectTypes = () => {
         Types of Projects
       </p>
       <div className="flex justify-center">
-        <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-12">
+        <div className="grid xl:grid-cols-2 md:grid-cols-2 gap-12">
           <Link
             href="/projects"
             className="bg-projects-emb-100 rounded-xl relative overflow-hidden flex p-3 min-w-80 max-w-80 h-80"
@@ -78,7 +78,7 @@ const ProjectTypes = () => {
             <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               ELECTRONIC
               <br />
-              GAME
+              GRAPHICS
             </p>
           </Link>
           <Link
