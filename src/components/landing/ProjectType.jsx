@@ -78,7 +78,7 @@ const ProjectTypes = () => {
             <p className="text-white text-4xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               ELECTRONIC
               <br />
-              GAME
+              GRAPHICS
             </p>
           </Link>
           <Link
