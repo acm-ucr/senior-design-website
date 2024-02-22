@@ -40,7 +40,7 @@ const Title = ({ year, projectName, teamMembers, type, logo }) => {
         />
         <p className="text-senior-purple-100 text-sm mb-1">{type}</p>
       </div>
-      <div className="flex pb-5">
+      <div className="flex">
         <div className="flex border-2 rounded">
           <FaGithub className="mt-1 mx-2" />
           <p className="flex-shrink-0 pr-1">Github</p>

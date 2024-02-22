@@ -9,7 +9,7 @@ const Details = () => {
       <div className="relative h-96 w-full">
         <Image src={img2} layout="fill" objectFit="cover" alt="projectImage" />
       </div>
-      <div className="bg-white px-8 md:px-64">
+      <div className="bg-white px-8 md:px-32 lg:px-32 xl:px-64">
         <Title
           year="2023-2024"
           projectName="Project Name"
@@ -17,11 +17,13 @@ const Details = () => {
           type="Operating System"
           logo="oslogo"
         />
-        <div className="flex items-center gap-1">
+
+        <div className="flex items-center gap-1 pt-5">
           <div className="bg-senior-yellow-100 h-5 w-1" />
-          <p className="font-bold text-lg pt-3">Inspiration</p>
+          <p className="font-bold text-lg">Inspiration</p>
         </div>
-        <p className="pl-4 pt-4 pb-12">
+
+        <p className="pl-4 pt-2 pb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -33,9 +35,9 @@ const Details = () => {
 
         <div className="flex items-center gap-1">
           <div className="bg-senior-yellow-100 h-5 w-1" />
-          <p className="font-bold text-lg pt-3">Purpose</p>
+          <p className="font-bold text-lg">Purpose</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 pl-4 pt-4 pb-12 gap-4">
+        <div className="flex flex-col items-center lg:grid lg:grid-cols-2 pl-4 pt-2 gap-4">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -55,10 +57,10 @@ const Details = () => {
 
         <div className="flex items-center gap-1">
           <div className="bg-senior-yellow-100 h-5 w-1" />
-          <p className="font-bold text-lg pt-3">Video</p>
+          <p className="font-bold text-lg pt-6">Video</p>
         </div>
 
-        <div className="pl-4 pt-4 pb-16 flex justify-center">
+        <div className="pl-4 pt-2 pb-16 flex justify-center">
           <Image src={img1} width={450} height={350} alt="projectimage" />
         </div>
       </div>
