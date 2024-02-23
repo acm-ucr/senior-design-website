@@ -82,12 +82,15 @@ const ProjectTypes = () => {
               GAME
             </p>
           </Link>
+
           <Link
             href="/projects"
             className="bg-projects-compiler-100 rounded-xl relative overflow-hidden flex p-4"
           >
             <Image
-              src={compilerlogo}
+              src={compilerlogo.src}
+              width={225}
+              height={225}
               alt="compilerlogo"
               className="-ml-6 md:-ml-8"
             />
@@ -98,9 +101,15 @@ const ProjectTypes = () => {
 
           <Link
             href="/projects"
-            className="bg-projects-operating-100 rounded-xl relative overflow-hidden flex p-12"
+            className="bg-projects-operating-100 rounded-xl relative overflow-hidden flex p-4"
           >
-            <Image src={oslogo} alt="oslogo" className="-ml-6 md:-ml-8" />
+            <Image
+              src={oslogo.src}
+              width={300}
+              height={200}
+              alt="oslogo"
+              className="-ml-6 md:-ml-14"
+            />
 
             <p className="text-white text-xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
               OPERATING
@@ -115,7 +124,7 @@ const ProjectTypes = () => {
           >
             <Image
               src={ailogo.src}
-              width={225}
+              width={275}
               height={225}
               alt="ailogo"
               className="-ml-6 md:-ml-8"
