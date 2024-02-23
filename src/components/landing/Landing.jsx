@@ -10,7 +10,6 @@ const Landing = () => {
       <Welcome />
       <About />
       <ProjectTypes />
-      ahhhhh
       <PastProjects />
       <ViewMore />
     </div>

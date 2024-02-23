@@ -108,7 +108,7 @@ const ProjectTypes = () => {
               width={300}
               height={200}
               alt="oslogo"
-              className="-ml-6 md:-ml-14"
+              className="-ml-6 md:-ml-16"
             />
 
             <p className="text-white text-xl font-bold text-right mr-2 absolute inset-x-0 bottom-0">
