@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Filterbuttons from "../../components/projects/filterbuttons";
 import Search from "@/components/projects/Search";
+import ProjectCards from "@/components/projects/ProjectCards";
+
 const Page = () => {
   const [selectedYears, setSelectedYears] = useState([]);
   const [selectedTypes, setSelectedTypes] = useState([]);
@@ -27,6 +29,7 @@ const Page = () => {
         onYearSelect={setSelectedYears}
         onTypeSelect={setSelectedTypes}
       />
+      <ProjectCards />
     </>
   );
 };

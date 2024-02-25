@@ -8,7 +8,6 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      expand="md"
       fixed="top"
       className="py-2 px-3 m-0 min-h-[8vh] drop-shadow-lg flex justify-between bg-white md:min-h-[5vh]"
     >
@@ -34,7 +33,7 @@ const Navigation = () => {
         id="navbar-nav"
         className="items-center justify-end md:mr-8 flex"
       >
-        <Nav className="flex items-center w-full md:w-auto">
+        <Nav className="flex items-center w-auto">
           <Nav.Link
             as={Link}
             href="/projects"
