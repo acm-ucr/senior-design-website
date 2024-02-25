@@ -1,55 +1,46 @@
-"use client";
-import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 
-const Search = ({ selectedYears = [], selectedTypes = [] }) => {
-  const [inputValue, setInputValue] = useState("");
-
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(inputValue);
-  };
-
+const Search = ({
+  selectedYears = [],
+  selectedTypes = [],
+  onRemoveYear,
+  onRemoveType,
+}) => {
   return (
     <div className="flex justify-center">
-      <div className="relative">
-        <form onSubmit={handleSubmit}>
-          <div className="flex items-center relative">
-            <CiSearch className="absolute left-0 top-1 mt-2 ml-2" />
-            <input
-              type="text"
-              placeholder="Project Name"
-              className="rounded-lg pr-36 md:pr-96 pl-10 py-2 border border-black"
-              value={inputValue}
-              onChange={handleChange}
-            />
+      <div className="flex flex-wrap border-1 border-black rounded-xl gap-x-2 items-center my-2 w-2/3 p-2">
+        <CiSearch className="mr-2" />
+        {selectedYears.map((year) => (
+          <div
+            key={year}
+            className="bg-white border-1 border-buttons-blue rounded-md text-buttons-blue px-2 py-1 mr-2  flex items-center"
+          >
+            {year}
+            <button
+              type="button"
+              className="ml-2 text-xl text-buttons-blue"
+              onClick={() => onRemoveYear(year)}
+            >
+              &times;
+            </button>
           </div>
-        </form>
-
-        <div className="flex flex-wrap mt-2">
-          {selectedYears.length > 0 &&
-            selectedYears.map((year) => (
-              <span
-                key={year}
-                className="bg-white border-1 border-buttons-blue rounded-md text-buttons-blue px-2 py-1 mr-2 mb-2"
-              >
-                {year}
-              </span>
-            ))}
-          {selectedTypes.length > 0 &&
-            selectedTypes.map((type) => (
-              <span
-                key={type}
-                className="bg-white border-1 border-buttons-orange text-buttons-orange rounded-md px-2 py-1 mr-2 mb-2"
-              >
-                {type}
-              </span>
-            ))}
-        </div>
+        ))}
+        {selectedTypes.map((type) => (
+          <div
+            key={type}
+            className="bg-white border-1 tag-item border-buttons-orange text-buttons-orange rounded-md px-2 py-1 mr-2 flex items-center"
+          >
+            {type}
+            <button
+              type="button"
+              className="ml-2 text-xl text-buttons-orange"
+              onClick={() => onRemoveType(type)}
+            >
+              &times;
+            </button>
+          </div>
+        ))}
+        <input type="text" className="flex-grow-1" placeholder="Project Type" />
       </div>
     </div>
   );

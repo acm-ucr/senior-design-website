@@ -1,5 +1,4 @@
-"use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
@@ -16,7 +15,6 @@ function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
             />
 
             {data}
-
             <svg
               className="
                     absolute 
@@ -47,6 +45,16 @@ const Filterbuttons = ({
 }) => {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
+  const [isYearSelected, setIsYearSelected] = useState(false);
+  const [isTypeSelected, setIsTypeSelected] = useState(false);
+
+  useEffect(() => {
+    setIsYearSelected(selectedYears.length > 0);
+  }, [selectedYears]);
+
+  useEffect(() => {
+    setIsTypeSelected(selectedTypes.length > 0);
+  }, [selectedTypes]);
 
   const handleYearSelection = (year) => {
     const updatedYears = selectedYears.includes(year)
@@ -77,26 +85,46 @@ const Filterbuttons = ({
   };
 
   return (
-    <div className="flex flex-row gap-1 justify-center pr-48 -ml-2 md:pr-96 md:-ml-14">
+    <div className="flex flex-row gap-1 pl-[16.66%]">
       <div>
         {open && !open1 ? (
           <button
             onClick={handleOpen}
-            className="border-2 border-buttons-blue rounded-md px-2"
+            className={`border-2 border-buttons-blue
+            rounded-md px-2`}
           >
             <div className="flex flex-row p-0.5">
-              <div className="text-buttons-blue mr-4"> {"year"} </div>
-              <IoIosArrowUp className="mt-1" />
+              <div
+                className={`text-buttons-blue
+                mr-4`}
+              >
+                {"year"}
+              </div>
+              <IoIosArrowUp className={`mt-1 text-buttons-blue`} />
             </div>
           </button>
         ) : (
           <button
             onClick={handleOpen}
-            className="bg-gray-200 rounded-md px-2 py-1"
+            className={`rounded-md px-2 py-1 ${
+              isYearSelected
+                ? "border-buttons-blue bg-white border-2"
+                : "border-gray-500 bg-gray-200"
+            }`}
           >
             <div className="flex flex-row">
-              <div className="text-gray-500 mr-4"> {"year"} </div>
-              <IoIosArrowDown className="mt-1" />
+              <div
+                className={`${
+                  isYearSelected ? "text-buttons-blue" : "text-gray-500"
+                } mr-4`}
+              >
+                {"year"}
+              </div>
+              <IoIosArrowDown
+                className={`mt-1 ${
+                  isYearSelected ? "text-buttons-blue" : "text-gray-500"
+                }`}
+              />
             </div>
           </button>
         )}
@@ -117,21 +145,35 @@ const Filterbuttons = ({
         {open1 && !open ? (
           <button
             onClick={handleOpen1}
-            className="border-2 border-buttons-orange rounded-md px-2"
+            className={`border-2 border-buttons-orange rounded-md px-2`}
           >
             <div className="flex flex-row p-0.5">
-              <div className="text-buttons-orange mr-4"> {"type"} </div>
-              <IoIosArrowUp className="mt-1" />
+              <div className={`text-buttons-orange mr-4`}>{"type"}</div>
+              <IoIosArrowUp className={`mt-1 text-buttons-orange`} />
             </div>
           </button>
         ) : (
           <button
             onClick={handleOpen1}
-            className="bg-gray-200 rounded-md px-2 py-1"
+            className={`bg-gray-200 rounded-md px-2 py-1 ${
+              isTypeSelected
+                ? "border-buttons-orange border-2 bg-white"
+                : "border-gray-500"
+            }`}
           >
             <div className="flex flex-row">
-              <div className="text-gray-500 mr-4"> {"type"} </div>
-              <IoIosArrowDown className="mt-1" />
+              <div
+                className={`${
+                  isTypeSelected ? "text-buttons-orange" : "text-gray-500"
+                } mr-4`}
+              >
+                {"type"}
+              </div>
+              <IoIosArrowDown
+                className={`mt-1 ${
+                  isTypeSelected ? "text-buttons-orange" : "text-gray-500"
+                }`}
+              />
             </div>
           </button>
         )}
