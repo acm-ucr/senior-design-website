@@ -40,7 +40,11 @@ const Search = ({
             </button>
           </div>
         ))}
-        <input type="text" className="flex-grow-1" placeholder="Project Type" />
+        <input
+          type="text"
+          className="flex-grow-1 focus:outline-none"
+          placeholder="Project Type"
+        />
       </div>
     </div>
   );
