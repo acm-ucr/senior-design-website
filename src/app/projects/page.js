@@ -6,28 +6,17 @@ import ProjectCards from "@/components/projects/ProjectCards";
 
 const Page = () => {
   const [selectedYears, setSelectedYears] = useState([]);
-  const [selectedTypes, setSelectedTypes] = useState([]);
   const handleRemoveYear = (year) => {
     setSelectedYears(selectedYears.filter((item) => item !== year));
   };
 
-  const handleRemoveType = (type) => {
-    setSelectedTypes(selectedTypes.filter((item) => item !== type));
-  };
   return (
     <>
       <div>Projects</div>
-      <Search
-        selectedYears={selectedYears}
-        selectedTypes={selectedTypes}
-        onRemoveYear={handleRemoveYear}
-        onRemoveType={handleRemoveType}
-      />
+      <Search selectedYears={selectedYears} onRemoveYear={handleRemoveYear} />
       <Filterbuttons
         selectedYears={selectedYears}
-        selectedTypes={selectedTypes}
         onYearSelect={setSelectedYears}
-        onTypeSelect={setSelectedTypes}
       />
       <ProjectCards />
     </>
