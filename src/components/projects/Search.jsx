@@ -1,11 +1,6 @@
 import { CiSearch } from "react-icons/ci";
 
-const Search = ({
-  selectedYears = [],
-  selectedTypes = [],
-  onRemoveYear,
-  onRemoveType,
-}) => {
+const Search = ({ selectedYears = [], onRemoveYear }) => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-wrap border-1 border-black rounded-xl gap-x-2 items-center my-2 w-2/3 p-2">
@@ -20,21 +15,6 @@ const Search = ({
               type="button"
               className="ml-2 text-xl text-buttons-blue"
               onClick={() => onRemoveYear(year)}
-            >
-              &times;
-            </button>
-          </div>
-        ))}
-        {selectedTypes.map((type) => (
-          <div
-            key={type}
-            className="bg-white border-1 tag-item border-buttons-orange text-buttons-orange rounded-md px-2 py-1 mr-2 flex items-center"
-          >
-            {type}
-            <button
-              type="button"
-              className="ml-2 text-xl text-buttons-orange"
-              onClick={() => onRemoveType(type)}
             >
               &times;
             </button>

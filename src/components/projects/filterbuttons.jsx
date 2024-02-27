@@ -37,24 +37,14 @@ function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
   );
 }
 
-const Filterbuttons = ({
-  selectedYears,
-  selectedTypes,
-  onYearSelect,
-  onTypeSelect,
-}) => {
+const Filterbuttons = ({ selectedYears, onYearSelect }) => {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [isYearSelected, setIsYearSelected] = useState(false);
-  const [isTypeSelected, setIsTypeSelected] = useState(false);
 
   useEffect(() => {
     setIsYearSelected(selectedYears.length > 0);
   }, [selectedYears]);
-
-  useEffect(() => {
-    setIsTypeSelected(selectedTypes.length > 0);
-  }, [selectedTypes]);
 
   const handleYearSelection = (year) => {
     const updatedYears = selectedYears.includes(year)
@@ -63,25 +53,11 @@ const Filterbuttons = ({
     onYearSelect(updatedYears);
   };
 
-  const handleTypeSelection = (type) => {
-    const updatedTypes = selectedTypes.includes(type)
-      ? selectedTypes.filter((item) => item !== type)
-      : [...selectedTypes, type];
-    onTypeSelect(updatedTypes);
-  };
-
   const handleOpen = () => {
     if (open1 === true && open === false) {
       setOpen1(false);
     }
     setOpen(!open);
-  };
-
-  const handleOpen1 = () => {
-    if (open === true && open1 === false) {
-      setOpen(false);
-    }
-    setOpen1(!open1);
   };
 
   return (
@@ -135,55 +111,6 @@ const Filterbuttons = ({
             checkedcolor={"checked:bg-sky-300"}
             handleSelection={handleYearSelection}
             selectedItems={selectedYears}
-          />
-        ) : (
-          <div></div>
-        )}
-      </div>
-
-      <div>
-        {open1 && !open ? (
-          <button
-            onClick={handleOpen1}
-            className={`border-2 border-buttons-orange rounded-md px-2`}
-          >
-            <div className="flex flex-row p-0.5">
-              <div className={`text-buttons-orange mr-4`}>{"type"}</div>
-              <IoIosArrowUp className={`mt-1 text-buttons-orange`} />
-            </div>
-          </button>
-        ) : (
-          <button
-            onClick={handleOpen1}
-            className={`bg-gray-200 rounded-md px-2 py-1 ${
-              isTypeSelected
-                ? "border-buttons-orange border-2 bg-white"
-                : "border-gray-500"
-            }`}
-          >
-            <div className="flex flex-row">
-              <div
-                className={`${
-                  isTypeSelected ? "text-buttons-orange" : "text-gray-500"
-                } mr-4`}
-              >
-                {"type"}
-              </div>
-              <IoIosArrowDown
-                className={`mt-1 ${
-                  isTypeSelected ? "text-buttons-orange" : "text-gray-500"
-                }`}
-              />
-            </div>
-          </button>
-        )}
-
-        {open1 && !open ? (
-          <MakeList
-            list={["Operating Systems", "Compiler", "Database"]}
-            checkedcolor={"checked:bg-buttons-orange"}
-            handleSelection={handleTypeSelection}
-            selectedItems={selectedTypes}
           />
         ) : (
           <div></div>
