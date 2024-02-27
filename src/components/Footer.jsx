@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="text-center bg-[#eaf5f8] m-5">
+    <div className="text-center bg-[#eaf5f8] p-5 w-full">
       <p className="mt-4 text-yellow-400 font-bold text-2xl inline-block">
         {" "}
         UCR
