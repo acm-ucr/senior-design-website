@@ -5,7 +5,7 @@ import ProjectCard from "@/components/projectcard";
 const PastProjects = () => {
   const numberOfCardsToShow = 6;
 
-  const visibleProjects = FakeData.slice(0, numberOfCardsToShow);
+  const visibleProjects = FakeData.events.slice(0, numberOfCardsToShow);
 
   return (
     <div className="bg-white  flex justify-center items-center text-center flex-col py-8">
