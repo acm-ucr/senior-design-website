@@ -19,7 +19,7 @@ const Details = () => {
         />
 
         <div className="flex items-center gap-1 pt-5">
-          <div className="bg-senior-yellow-100 h-5 w-1" />
+          <div className="bg-senior-yellow-100 h-5 w-1 -mt-4" />
           <p className="font-bold text-lg">Inspiration</p>
         </div>
 
@@ -34,7 +34,7 @@ const Details = () => {
         </p>
 
         <div className="flex items-center gap-1">
-          <div className="bg-senior-yellow-100 h-5 w-1" />
+          <div className="bg-senior-yellow-100 h-5 w-1 -mt-4" />
           <p className="font-bold text-lg">Purpose</p>
         </div>
         <div className="flex flex-col items-center lg:grid lg:grid-cols-2 pl-4 pt-2 gap-4">
@@ -56,7 +56,7 @@ const Details = () => {
         </div>
 
         <div className="flex items-center gap-1">
-          <div className="bg-senior-yellow-100 h-5 w-1" />
+          <div className="bg-senior-yellow-100 h-5 w-1 mt-2" />
           <p className="font-bold text-lg pt-6">Video</p>
         </div>
 
