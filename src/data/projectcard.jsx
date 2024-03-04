@@ -12,7 +12,7 @@ import ailogo from "@/public/svg/artificial-intelligence.svg";
 import otherslogo from "@/public/svg/others.svg";
 
 const ProjectCard = ({ project }) => {
-  const { projectName, icon, projectType, year, names, description } = project;
+  const { projectName, icon,  year, names, description } = project; //projectType
 
   const iconMap = {
     "Embedded Systems": emblogo,
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
       <div className="project-details text-center">
         <h2 className="project-name text-2xl font-bold">{projectName}</h2>
 
-        <div className="flex flex-row justify-center items-center text-center">
+       {/* <div className="flex flex-row justify-center items-center text-center"> 
           <Image
             src={iconMap[projectType]}
             alt={projectType}
@@ -47,7 +47,7 @@ const ProjectCard = ({ project }) => {
             className="projectypeimage"
           />
           <p className="text-base">{projectType}</p>
-        </div>
+  </div>  */}
 
         <p className="text-gray-200  mt-1">{year}</p>
 
