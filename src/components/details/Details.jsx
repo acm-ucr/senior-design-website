@@ -5,8 +5,8 @@ import img2 from "../../../public/image1.png";
 import FakeDetailsData from "@/data/fakedetailsdata";
 
 const Details = () => {
-  const inspirationLines = FakeDetailsData[0].inspiration.split("\n");
-  const purposeLines = FakeDetailsData[0].purpose.split("\n");
+  const inspiration = FakeDetailsData[0].inspiration;
+  const purpose = FakeDetailsData[0].purpose;
   const video = FakeDetailsData[0].video;
 
   return (
@@ -27,9 +27,7 @@ const Details = () => {
           <p className="font-bold text-lg pt-3">Inspiration</p>
         </div>
         <div className="pl-4 pt-4 pb-12">
-          {inspirationLines.map((line, index) => (
-            <div key={index}>{line}</div>
-          ))}
+          <div>{inspiration}</div>
         </div>
 
         <div className="flex items-center gap-1">
@@ -38,12 +36,7 @@ const Details = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 pl-4 pt-4 pb-12 gap-4">
           <div>
-            {purposeLines.map((line, index) => (
-              <div key={index}>
-                {line}
-                <p>&nbsp;</p>
-              </div>
-            ))}
+            <div>{purpose}</div>
           </div>
           <div>
             <Image src={img1} width={350} height={250} alt="projectimage" />
