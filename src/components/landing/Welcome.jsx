@@ -17,7 +17,7 @@ const Welcome = () => {
           Vulputate mi sut amet mauris commodo quis. Curabitur gravida arcu ac
           tortor dignissim convallis arnean et tortor.
         </p>
-        <button className="w-1/4 bg-buttons-orange lg:mx-20 mx-[17%] text-white font-bold p-2 lg:mb-5 rounded-md hover:-translate-y-0.5">
+        <button className="w-1/4 bg-buttons-orange lg:mx-20 mx-10 text-white font-bold p-2 lg:mb-5 rounded-md hover:-translate-y-0.5">
           PROJECTS
         </button>
       </div>
