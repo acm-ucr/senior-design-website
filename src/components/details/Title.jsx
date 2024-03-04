@@ -7,9 +7,9 @@ import compilerlogo from "../../../public/svg/compiler.svg";
 import oslogo from "../../../public/svg/operating-systems.svg";
 import ailogo from "../../../public/svg/artificial-intelligence.svg";
 import otherslogo from "../../../public/svg/others.svg";
+import figmaLogo from "@/public/figma.png";
 import { FaGithub } from "react-icons/fa";
-import { IoIosLink } from "react-icons/io";
-import { FaFigma } from "react-icons/fa";
+import { HiLink } from "react-icons/hi";
 
 const logos = {
   emblogo,
@@ -40,18 +40,20 @@ const Title = ({ year, projectName, teamMembers, type, logo }) => {
         />
         <p className="text-senior-purple-100 text-sm mb-1">{type}</p>
       </div>
-      <div className="flex">
-        <div className="flex border-2 rounded">
+      <div className="flex pb-10 inline-block">
+        <div className="flex md:border-2 rounded float-sm-smart">
           <FaGithub className="mt-1 mx-2" />
-          <p className="flex-shrink-0 pr-1">Github</p>
+          <p className="p-0 mr-2">Github</p>
         </div>
         <div className="flex border-2 rounded mx-2">
-          <FaFigma className="mt-1 mx-2" />
-          <p className="flex-shrink-0 pr-1">Figma</p>
+          <div className="mt-1 mx-2 w-4 h-4">
+            <Image src={figmaLogo} />
+          </div>
+          <p className="p-0 mr-2">Figma</p>
         </div>
         <div className="flex border-2 rounded">
-          <IoIosLink className="mt-1 mx-2" />
-          <p className="flex-shrink-0 pr-1">Link</p>
+          <HiLink className="mt-1 mx-2" flex flip="horizontal" />
+          <p className="p-0 mr-2">Link</p>
         </div>
       </div>
     </div>
