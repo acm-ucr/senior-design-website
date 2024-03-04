@@ -40,20 +40,20 @@ const Title = ({ year, projectName, teamMembers, type, logo }) => {
         />
         <p className="text-senior-purple-100 text-sm mb-1">{type}</p>
       </div>
-      <div className="flex pb-10 inline-block">
-        <div className="flex md:border-2 rounded float-sm-smart">
+      <div className="flex">
+        <div className="flex md:border-2 rounded p-1">
           <FaGithub className="mt-1 mx-2" />
-          <p className="p-0 mr-2">Github</p>
+          <p className="p-0 m-0 mr-2">Github</p>
         </div>
-        <div className="flex border-2 rounded mx-2">
+        <div className="flex border-2 rounded mx-2 p-1 pr-1">
           <div className="mt-1 mx-2 w-4 h-4">
             <Image src={figmaLogo} />
           </div>
-          <p className="p-0 mr-2">Figma</p>
+          <p className="p-0 m-0 mr-2">Figma</p>
         </div>
-        <div className="flex border-2 rounded">
+        <div className="flex border-2 rounded p-1 pr-4">
           <HiLink className="mt-1 mx-2" flex flip="horizontal" />
-          <p className="p-0 mr-2">Link</p>
+          <p className="p-0 m-0 mr-2">Link</p>
         </div>
       </div>
     </div>
