@@ -16,7 +16,7 @@ const ProjectTypes = () => {
         Types of Projects
       </p>
       <div className="flex flex-row justify-center">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 px-20 md:px-40">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 px-20 md:px-40">
           <Link
             href="/projects"
             className="bg-projects-emb-100 rounded-xl relative overflow-hidden flex p-4"
