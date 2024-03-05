@@ -5,10 +5,10 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 function MakeList({ list, checkedcolor }) {
   return (
-    <div className="border-2 rounded-md border-gray-500 mt-1">
+    <div className="absolute border rounded-md border-gray-500 mt-2">
       {list.map(function (data) {
         return (
-          <div className="flex flex-row gap-2 m-2" key={0}>
+          <div className="flex flex-row gap-2 m-2 px-3" key={0}>
             <input
               type="checkbox"
               className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm  mt-1 ${checkedcolor}`}
@@ -62,7 +62,7 @@ const Filterbuttons = () => {
         {open && !open1 ? (
           <button
             onClick={handleOpen}
-            className="border-2 border-buttons-blue rounded-md px-2"
+            className="border-2 border-buttons-blue rounded-md px-2 h-8"
           >
             <div className="flex flex-row p-0.5">
               <div className="text-buttons-blue mr-4"> {"year"} </div>
@@ -72,7 +72,7 @@ const Filterbuttons = () => {
         ) : (
           <button
             onClick={handleOpen}
-            className="bg-gray-200 rounded-md px-2 py-1"
+            className="bg-gray-200 rounded-md px-2 py-1 h-8"
           >
             <div className="flex flex-row">
               <div className="text-gray-500 mr-4"> {"year"} </div>
@@ -105,7 +105,7 @@ const Filterbuttons = () => {
         ) : (
           <button
             onClick={handleOpen1}
-            className="bg-gray-200 rounded-md px-2 py-1"
+            className="bg-gray-200 rounded-md px-2 py-1 absolute"
           >
             <div className="flex flex-row">
               <div className="text-gray-500 mr-4"> {"type"} </div>
