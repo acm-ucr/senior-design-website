@@ -26,13 +26,13 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="flex-col justify-self-center justify-center items-center shadow-2xl  min-w-96 h-full w-96  rounded-md md:w-5/6 lg:w-7/12   sm:w-5/6">
+    <div className="flex-col justify-self-center justify-center items-center shadow-2xl h-full rounded-md md:w-5/6 lg:w-5/6 sm:w-5/6 w-5/6">
       <Image
         src={icon}
         alt={projectName}
         className="project-image self-center mx-auto "
-        width={200}
-        height={225}
+        width={150}
+        height={175}
         style={{ alignSelf: "center" }}
       />
 
