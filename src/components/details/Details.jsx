@@ -14,7 +14,7 @@ const Details = () => {
       <div className="relative h-96 w-full">
         <Image src={img2} layout="fill" objectFit="cover" alt="projectImage" />
       </div>
-      <div className="bg-white px-8 md:px-64">
+      <div className="bg-white px-8 md:px-32 lg:px-32 xl:px-64">
         <Title
           year="2023-2024"
           projectName="Project Name"
@@ -22,33 +22,38 @@ const Details = () => {
           type="Operating System"
           logo="oslogo"
         />
-        <div className="flex items-center gap-1">
-          <div className="bg-senior-yellow-100 h-5 w-1" />
-          <p className="font-bold text-lg pt-3">Inspiration</p>
+
+        <div className="flex items-center gap-1 pt-5">
+          <div className="bg-senior-yellow-100 h-5 w-1 -mt-4" />
+          <p className="font-bold text-lg">Inspiration</p>
         </div>
+
         <div className="pl-4 pt-4 pb-12">
           <div>{inspiration}</div>
         </div>
 
         <div className="flex items-center gap-1">
-          <div className="bg-senior-yellow-100 h-5 w-1" />
-          <p className="font-bold text-lg pt-3">Purpose</p>
+          <div className="bg-senior-yellow-100 h-5 w-1 -mt-4" />
+          <p className="font-bold text-lg">Purpose</p>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 pl-4 pt-4 pb-12 gap-4">
           <div>
             <div>{purpose}</div>
           </div>
+
           <div>
             <Image src={img1} width={350} height={250} alt="projectimage" />
           </div>
         </div>
 
         <div className="flex items-center gap-1">
-          <div className="bg-senior-yellow-100 h-5 w-1" />
-          <p className="font-bold text-lg pt-3">Video</p>
+          <div className="bg-senior-yellow-100 h-5 w-1 mt-2" />
+          <p className="font-bold text-lg pt-6">Video</p>
         </div>
+
         <div className="text-center">{video}</div>
-        <div className="pl-4 pt-4 pb-16 flex justify-center">
+        <div className="pl-4 pt-2 pb-16 flex justify-center">
           <Image src={img1} width={450} height={350} alt="projectimage" />
         </div>
       </div>

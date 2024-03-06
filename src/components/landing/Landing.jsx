@@ -9,7 +9,6 @@ const Landing = () => {
     <div className="w-full flex flex-col">
       <Welcome />
       <About />
-
       <ProjectTypes />
       <PastProjects />
       <ViewMore />
