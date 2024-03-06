@@ -6,10 +6,9 @@ import ViewMore from "@/components/ViewMore";
 
 const Landing = () => {
   return (
-    <div className="w-full bg-blue-50 flex flex-col">
+    <div className="w-full flex flex-col">
       <Welcome />
       <About />
-
       <ProjectTypes />
       <PastProjects />
       <ViewMore />

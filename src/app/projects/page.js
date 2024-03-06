@@ -1,17 +1,8 @@
-import Filterbuttons from "../../components/projects/filterbuttons";
-import ProjectCards from "@/components/projects/ProjectCards";
+"use client";
+import Projects from "@/components/projects/Projects";
 
 const Page = () => {
-  return (
-    <>
-      <div>Projects</div>
-      <div>
-        <Filterbuttons />
-      </div>
-
-      <ProjectCards />
-    </>
-  );
+  return <Projects />;
 };
 
 export default Page;
