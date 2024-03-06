@@ -13,6 +13,7 @@ const PastProjects = () => {
       <Image
         className="h-72 w-screen object-cover object-bottom z-1"
         src={bournsBuilding}
+        alt="bourns building"
       />
     </>
   );
