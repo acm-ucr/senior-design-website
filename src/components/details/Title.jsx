@@ -47,7 +47,7 @@ const Title = ({ year, projectName, teamMembers, type, logo }) => {
         </div>
         <div className="flex border-2 rounded mx-2">
           <div className="mt-1 mx-2 w-4 h-4">
-            <Image src={figmaLogo} />
+            <Image src={figmaLogo} alt="Figma logo" />
           </div>
           <p className="p-0 mr-2">Figma</p>
         </div>
