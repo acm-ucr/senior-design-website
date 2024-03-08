@@ -3,13 +3,13 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
   return (
-    <div className="border-2 rounded-md border-gray-500 mt-1">
+    <div className="absolute border rounded-md border-gray-500 mt-2 bg-white">
       {list.map(function (data) {
         return (
-          <div className="flex flex-row gap-2 m-2" key={data}>
+          <div className="flex flex-row gap-2 m-2 px-3  " key={data}>
             <input
               type="checkbox"
-              className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm mt-1 ${checkedcolor}`}
+              className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm mt-1   ${checkedcolor}`}
               onChange={() => handleSelection(data)}
               checked={selectedItems.includes(data)}
             />
@@ -66,8 +66,8 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
         {open && !open1 ? (
           <button
             onClick={handleOpen}
-            className={`border-2 border-buttons-blue
-            rounded-md px-2`}
+            className={`border border-buttons-blue
+            rounded-md px-2 h-8`}
           >
             <div className="flex flex-row p-0.5">
               <div
@@ -82,9 +82,9 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
         ) : (
           <button
             onClick={handleOpen}
-            className={`rounded-md px-2 py-1 ${
+            className={`bg-gray-200 rounded-md px-2 py-1 h-8 ${
               isYearSelected
-                ? "border-buttons-blue bg-white border-2"
+                ? "border-buttons-blue bg-white border"
                 : "border-gray-500 bg-gray-200"
             }`}
           >
