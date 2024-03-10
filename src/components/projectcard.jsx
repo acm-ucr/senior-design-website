@@ -2,17 +2,21 @@
 
 import React from "react";
 import Image from "next/image";
+import img1 from "../../public/stockphoto1.jpg";
+import img2 from "../../public/stockphoto2.jpg";
+import img3 from "../../public/stockphoto3.jpg";
 
-const ProjectCard = ({ project }) => {
-  const { projectName, icon, year, names, description } = project;
+const ProjectCard = ({ project, index }) => {
+  const { projectName, year, names, description } = project;
+  const images = [img1, img2, img3];
 
   return (
-    <div className="flex-col justify-self-center justify-center items-center shadow-2xl  min-w-96 h-full w-96  rounded-md md:w-5/6 lg:w-7/12   sm:w-5/6 mt-3">
+    <div className="flex-col justify-self-center justify-center items-center shadow-2xl min-w-96 h-full w-96 rounded-md md:w-5/6 lg:w-7/12   sm:w-5/6 mt-3">
       <Image
-        src={icon}
+        src={images[index % 3]}
         alt={projectName}
-        className="project-image self-center mx-auto "
-        width={150}
+        className="project-image self-center mx-auto"
+        width={300}
         height={175}
         style={{ alignSelf: "center" }}
       />

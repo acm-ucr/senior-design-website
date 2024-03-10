@@ -2,6 +2,7 @@ import Image from "next/image";
 import Title from "./Title";
 import img1 from "../../../public/tempimage.png";
 import img2 from "../../../public/image1.png";
+import stockImage from "../../../public/stockphoto3.jpg";
 import FakeDetailsData from "@/data/fakedetailsdata";
 
 const Details = () => {
@@ -43,7 +44,12 @@ const Details = () => {
           </div>
 
           <div>
-            <Image src={img1} width={350} height={250} alt="projectimage" />
+            <Image
+              src={stockImage}
+              width={350}
+              height={250}
+              alt="projectimage"
+            />
           </div>
         </div>
 
