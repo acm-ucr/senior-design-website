@@ -15,7 +15,6 @@ const PastProjects = () => {
         src={bournsBuilding}
         alt="bourns building"
       />
-      <div className="h-22"/>
     </>
   );
 };

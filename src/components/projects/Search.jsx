@@ -2,8 +2,8 @@ import { CiSearch } from "react-icons/ci";
 
 const Search = ({ selectedYears = [], onRemoveYear }) => {
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-wrap border-1 border-black rounded-xl gap-x-2 items-center my-2 w-2/3 p-2">
+    <div className="flex justify-center mb-15">
+      <div className="flex flex-wrap border-1 border-black rounded-xl gap-x-2 items-center mt-10 mb-2 w-2/3 p-2">
         <CiSearch className="mr-2" />
         {selectedYears.map((year) => (
           <div
