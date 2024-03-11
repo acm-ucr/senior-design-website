@@ -11,12 +11,12 @@ const ProjectCard = ({ project, index }) => {
   const images = [img1, img2, img3];
 
   return (
-    <div className="flex-col justify-self-center justify-center items-center shadow-2xl min-w-96 h-full w-96 rounded-md md:w-5/6 lg:w-7/12   sm:w-5/6 mt-3">
+    <div className="flex-col justify-self-center justify-center items-center shadow-2xl min-w-80 rounded-lg h-full w-96 md:w-5/6 lg:w-7/12   sm:w-5/6 mt-3">
       <Image
         src={images[index % 3]}
         alt={projectName}
         className="project-image self-center mx-auto"
-        width={300}
+        width={380}
         height={175}
         style={{ alignSelf: "center" }}
       />
