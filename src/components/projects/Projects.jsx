@@ -5,15 +5,15 @@ import Search from "@/components/projects/Search";
 import ProjectCards from "@/components/projects/ProjectCards";
 import ProjectThumnail from "@/components/projects/ProjectThumbnail";
 
-const Projects = ({ searchContent }) => {
-  const [selectedYears, setSelectedYears] = useState([]);
+const Projects = ({ searchContent, chosenYears }) => {
+  const [selectedYears, setSelectedYears] = useState(chosenYears);
   const handleRemoveYear = (year) => {
     setSelectedYears(selectedYears.filter((item) => item !== year));
   };
 
   const [searchBarText, setSearchBarText] = useState(searchContent);
 
-  console.log(searchBarText, selectedYears);
+  console.log(searchBarText);
 
   return (
     <>

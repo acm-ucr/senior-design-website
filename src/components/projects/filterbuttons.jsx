@@ -59,7 +59,6 @@ const Filterbuttons = ({ selectedYears, setSelectedYears }) => {
       : [...selectedYears, year];
     setSelectedYears(updatedYears);
 
-    console.log("updatedyears", updatedYears);
     const params = new URLSearchParams(searchParams);
 
     for (let i = 0; i < currlist.length; i++) {
