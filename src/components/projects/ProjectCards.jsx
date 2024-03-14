@@ -3,9 +3,6 @@ import FakeData from "@/data/fakedata";
 import ProjectCard from "@/components/projectcard";
 
 const PastProjects = ({ searchBarText, selectedYears }) => {
-  // const numberOfCardsToShow = 18;
-
-  // console.log("hello???", searchBarText);
   const selectProjects = () => {
     if (searchBarText == "" && selectedYears.length == 0) {
       return FakeData.events.slice(0, 18);
