@@ -47,6 +47,16 @@ const Filterbuttons = ({ selectedYears, setSelectedYears }) => {
   const pathname = usePathname();
   const { replace } = useRouter();
 
+  // try {
+
+  // } catch (error) {
+  //   if (isDynamicServerError(error)) {
+  //     throw error;
+  //   }
+
+  //   // handle other errors
+  // }
+
   const currlist = ["2022-23", "2023-24", "2024-25"];
 
   useEffect(() => {

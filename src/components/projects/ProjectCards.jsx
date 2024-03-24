@@ -25,8 +25,10 @@ const PastProjects = ({ searchBarText, selectedYears }) => {
 
       if (
         searchBarText == "" ||
-        searchBarText ==
-          FakeData.events[i].projectName.substring(0, searchBarText.length)
+        searchBarText.toLowerCase() ==
+          FakeData.events[i].projectName
+            .substring(0, searchBarText.length)
+            .toLowerCase()
       ) {
         const tmp = Object.assign({}, FakeData.events[i]);
         chosen.push(tmp);
