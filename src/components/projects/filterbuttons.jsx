@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
 function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
   return (
-    <div className="border-2 rounded-md border-gray-500 mt-1">
+    <div className="absolute border rounded-md border-gray-500 mt-2 bg-white">
       {list.map(function (data) {
         return (
-          <div className="flex flex-row gap-2 m-2" key={data}>
+          <div className="flex flex-row gap-2 m-2 px-3  " key={data}>
             <input
               type="checkbox"
-              className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm mt-1 ${checkedcolor}`}
+              className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm mt-1   ${checkedcolor}`}
               onChange={() => handleSelection(data)}
               checked={selectedItems.includes(data)}
             />
@@ -37,10 +38,26 @@ function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
   );
 }
 
-const Filterbuttons = ({ selectedYears, onYearSelect }) => {
+const Filterbuttons = ({ selectedYears, setSelectedYears }) => {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [isYearSelected, setIsYearSelected] = useState(false);
+
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+
+  // try {
+
+  // } catch (error) {
+  //   if (isDynamicServerError(error)) {
+  //     throw error;
+  //   }
+
+  //   // handle other errors
+  // }
+
+  const currlist = ["2022-23", "2023-24", "2024-25"];
 
   useEffect(() => {
     setIsYearSelected(selectedYears.length > 0);
@@ -50,7 +67,19 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
     const updatedYears = selectedYears.includes(year)
       ? selectedYears.filter((item) => item !== year)
       : [...selectedYears, year];
-    onYearSelect(updatedYears);
+    setSelectedYears(updatedYears);
+
+    const params = new URLSearchParams(searchParams);
+
+    for (let i = 0; i < currlist.length; i++) {
+      params.delete(currlist[i]);
+    }
+
+    for (let i = 0; i < updatedYears.length; i++) {
+      params.set(updatedYears[i], true);
+    }
+
+    replace(`${pathname}?${params.toString()}`);
   };
 
   const handleOpen = () => {
@@ -66,8 +95,8 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
         {open && !open1 ? (
           <button
             onClick={handleOpen}
-            className={`border-2 border-buttons-blue
-            rounded-md px-2`}
+            className={`border border-buttons-blue
+            rounded-md px-2 h-8`}
           >
             <div className="flex flex-row p-0.5">
               <div
@@ -82,9 +111,9 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
         ) : (
           <button
             onClick={handleOpen}
-            className={`rounded-md px-2 py-1 ${
+            className={`bg-gray-200 rounded-md px-2 py-1 h-8 ${
               isYearSelected
-                ? "border-buttons-blue bg-white border-2"
+                ? "border-buttons-blue bg-white border"
                 : "border-gray-500 bg-gray-200"
             }`}
           >
@@ -107,7 +136,7 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
 
         {open && !open1 ? (
           <MakeList
-            list={["2022-23", "2023-24", "2024-25"]}
+            list={currlist}
             checkedcolor={"checked:bg-sky-300"}
             handleSelection={handleYearSelection}
             selectedItems={selectedYears}
