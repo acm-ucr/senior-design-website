@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="bg-gradient-to-r from-senior-blue-300 to-senior-blue-100">
+    <div className="bg-gradient-to-r from-senior-blue-300 to-senior-blue-100 mb-10">
       <div className="text-center text-4xl font-bold md:pt-16 md:pb-12 pt-12 pb-8">
         Duis Sute Irure
       </div>
