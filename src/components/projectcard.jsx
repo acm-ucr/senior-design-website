@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index }) => {
   const images = [img1, img2, img3];
 
   return (
-    <div className="flex-col justify-self-center justify-center items-center shadow-2xl min-w-80 rounded-lg h-full w-96 md:w-5/6 lg:w-7/12   sm:w-5/6 mt-3">
+    <div className="flex-col justify-self-center justify-center items-center shadow-2xl min-w-80 rounded-lg h-full w-96 md:w-5/6 lg:w-7/12 sm:w-5/6 mt-3 overflow-hidden">
       <Image
         src={images[index % 3]}
         alt={projectName}
@@ -29,8 +29,8 @@ const ProjectCard = ({ project, index }) => {
         <div className="collaborators text-lg text-gray-400 -mt-3">
           <p className="collaborators-text text-lg">{names.join(", ")}</p>
         </div>
-        <div className="max-w-xs mx-auto mb-4 -mt-3">
-          <p className="project-description text-base   display: inline ">
+        <div className="max-w-xs mx-auto w-[85%] mb-4 -mt-3">
+          <p className="project-description text-base display: inline ">
             {description}
           </p>
         </div>
