@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
 function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
   return (
@@ -37,10 +38,26 @@ function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
   );
 }
 
-const Filterbuttons = ({ selectedYears, onYearSelect }) => {
+const Filterbuttons = ({ selectedYears, setSelectedYears }) => {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [isYearSelected, setIsYearSelected] = useState(false);
+
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+
+  // try {
+
+  // } catch (error) {
+  //   if (isDynamicServerError(error)) {
+  //     throw error;
+  //   }
+
+  //   // handle other errors
+  // }
+
+  const currlist = ["2022-23", "2023-24", "2024-25"];
 
   useEffect(() => {
     setIsYearSelected(selectedYears.length > 0);
@@ -50,7 +67,19 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
     const updatedYears = selectedYears.includes(year)
       ? selectedYears.filter((item) => item !== year)
       : [...selectedYears, year];
-    onYearSelect(updatedYears);
+    setSelectedYears(updatedYears);
+
+    const params = new URLSearchParams(searchParams);
+
+    for (let i = 0; i < currlist.length; i++) {
+      params.delete(currlist[i]);
+    }
+
+    for (let i = 0; i < updatedYears.length; i++) {
+      params.set(updatedYears[i], true);
+    }
+
+    replace(`${pathname}?${params.toString()}`);
   };
 
   const handleOpen = () => {
@@ -107,7 +136,7 @@ const Filterbuttons = ({ selectedYears, onYearSelect }) => {
 
         {open && !open1 ? (
           <MakeList
-            list={["2022-23", "2023-24", "2024-25"]}
+            list={currlist}
             checkedcolor={"checked:bg-sky-300"}
             handleSelection={handleYearSelection}
             selectedItems={selectedYears}
