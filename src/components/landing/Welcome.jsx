@@ -3,12 +3,17 @@ import bournsBuilding from "@/public/Bourns_Building.png";
 const Welcome = () => {
   return (
     <>
-      <Image
-        src={bournsBuilding}
-        width="100%"
-        height="100%"
-        alt="bourns building"
-      />
+      <div className="flex items-center justify-center max-h-screen max-w-full">
+        <div className="max-h-min lg:-mt-96  lg:-mb-16">
+          <Image
+            src={bournsBuilding}
+            width="100%"
+            height="100%"
+            alt="bourns building"
+            objectFit="cover"
+          />
+        </div>
+      </div>
       <div
         className="bg-[#fff] bg-opacity-80 absolute 
                       lg:w-[43.5%] lg:h-[45%] lg:left-20 lg:top-1/4  
