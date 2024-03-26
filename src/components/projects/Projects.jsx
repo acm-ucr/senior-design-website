@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Filterbuttons from "../../components/projects/filterbuttons";
 import Search from "@/components/projects/Search";
 import ProjectCards from "@/components/projects/ProjectCards";
-import ProjectThumnail from "@/components/projects/ProjectThumbnail";
+import ProjectThumbnail from "@/components/projects/ProjectThumbnail";
+import Pagination from "@/components/projects/Pagination";
 
 const Projects = ({ searchContent, chosenYears }) => {
   const [selectedYears, setSelectedYears] = useState(chosenYears);
@@ -15,9 +16,29 @@ const Projects = ({ searchContent, chosenYears }) => {
 
   console.log(searchBarText);
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(0);
+  const itemsPerPage = 15;
+
+  const fetchTotalPages = async (content) => {
+    return Math.ceil(content / itemsPerPage);
+  };
+
+  useEffect(() => {
+    const getTotalPages = async () => {
+      const totalPages = await fetchTotalPages(searchContent);
+      setTotalPages(totalPages);
+    };
+    getTotalPages();
+  }, [searchContent]);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <>
-      <ProjectThumnail />
+      <ProjectThumbnail />
       <Search
         selectedYears={selectedYears}
         onRemoveYear={handleRemoveYear}
@@ -27,10 +48,16 @@ const Projects = ({ searchContent, chosenYears }) => {
         selectedYears={selectedYears}
         setSelectedYears={setSelectedYears}
       />
-
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
       <ProjectCards
         searchBarText={searchBarText}
         selectedYears={selectedYears}
+        projectsPerPage={itemsPerPage}
+        currentPage={currentPage}
       />
     </>
   );
