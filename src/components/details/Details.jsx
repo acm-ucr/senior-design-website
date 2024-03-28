@@ -4,11 +4,10 @@ import img1 from "../../../public/tempimage.png";
 import img2 from "../../../public/image1.png";
 import FakeDetailsData from "@/data/fakedetailsdata.json";
 
-const Details = () => {
-  const inspiration = FakeDetailsData.events[0].inspiration;
-  const purpose = FakeDetailsData.events[0].purpose;
-  const video = FakeDetailsData.events[0].video;
-
+const Details = ({ year, projectName, teamMembers }) => {
+  const inspiration = FakeDetailsData[0].inspiration;
+  const purpose = FakeDetailsData[0].purpose;
+  const video = FakeDetailsData[0].video;
   return (
     <div className="bg-white px-4 md:px-8 lg:px-16 xl:px-32">
       <div className="relative h-96">
@@ -16,11 +15,9 @@ const Details = () => {
       </div>
       <div className="bg-white pt-8 md:pt-12 lg:pt-16">
         <Title
-          year="2023-2024"
+          year="2022-2023"
           projectName="Project Name"
-          teamMembers="Minnie Bennet, Chadwick Clayton, Ralph Hayes, Bertha Meza"
-          type="Operating System"
-          logo="oslogo"
+          teamMembers="Minnie Bennett, Chadwick Clayton, Ralph Hayes, Bertha Meza"
         />
         <div className="flex items-center gap-1 pt-5">
           <div className="bg-senior-yellow-100 h-5 w-1 -mt-4" />
