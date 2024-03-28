@@ -1,6 +1,6 @@
 import React from "react";
 import FakeData from "@/data/fakedata";
-import ProjectCard from "@/components/Projectcard";
+import ProjectCard from "@/components/projectcard";
 
 const PastProjects = () => {
   const numberOfCardsToShow = 6;
