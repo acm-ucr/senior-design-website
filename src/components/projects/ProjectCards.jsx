@@ -2,9 +2,9 @@ import React from "react";
 import FakeData from "@/data/fakedata";
 import ProjectCard from "@/components/Projectcard";
 
-const PastProjects = ({ searchBarText, selectedYears }) => {
+const PastProjects = ({ searchBarText, selectedYear }) => {
   const selectProjects = () => {
-    if (searchBarText == "" && selectedYears.length == 0) {
+    if (searchBarText == "" && selectedYear.length == 0) {
       return FakeData.events.slice(0, 18);
     }
 
@@ -12,10 +12,10 @@ const PastProjects = ({ searchBarText, selectedYears }) => {
     for (let i = 0; i < FakeData.events.length; i++) {
       const currentData = FakeData.events[i];
 
-      if (selectedYears.length != 0) {
+      if (selectedYear.length != 0) {
         let matchYear = false;
-        for (let j = 0; j < selectedYears.length; j++) {
-          if (Number(selectedYears[j].substring(0, 4)) == currentData.year) {
+        for (let j = 0; j < selectedYear.length; j++) {
+          if (Number(selectedYear[j].substring(0, 4)) == currentData.year) {
             matchYear = true;
             break;
           }
