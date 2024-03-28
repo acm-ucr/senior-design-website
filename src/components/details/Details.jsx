@@ -5,11 +5,10 @@ import img2 from "../../../public/image1.png";
 import stockImage from "../../../public/stockphoto3.jpg";
 import FakeDetailsData from "@/data/fakedetailsdata";
 
-const Details = () => {
+const Details = ({ year, projectName, teamMembers }) => {
   const inspiration = FakeDetailsData[0].inspiration;
   const purpose = FakeDetailsData[0].purpose;
   const video = FakeDetailsData[0].video;
-
   return (
     <div className="bg-white px-0 md:px-0">
       <div className="relative h-96 w-full">
@@ -17,11 +16,9 @@ const Details = () => {
       </div>
       <div className="bg-white px-8 md:px-32 lg:px-32 xl:px-64">
         <Title
-          year="2023-2024"
+          year="2022-2023"
           projectName="Project Name"
-          teamMembers="Minnie Bennet, Chadwick Clayton, Ralph Hayes, Bertha Meza"
-          type="Operating System"
-          logo="oslogo"
+          teamMembers="Minnie Bennett, Chadwick Clayton, Ralph Hayes, Bertha Meza"
         />
 
         <div className="flex items-center gap-1 pt-5">

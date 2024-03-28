@@ -25,7 +25,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 1",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -33,7 +33,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name1",
+      "projectName": "Name 2",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2022,
@@ -41,7 +41,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 3",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -49,7 +49,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 4",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -57,7 +57,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 5",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -65,7 +65,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 6",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -73,7 +73,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 7",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -81,7 +81,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 8",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -89,7 +89,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 9",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -97,7 +97,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 10",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -105,7 +105,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 11",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -113,7 +113,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 12",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -121,7 +121,39 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name 13",
+      "icon": "@/public/svg/database.svg",
+      "projectType": "Database",
+      "year": 2024,
+      "names": ["Steve", "Sarah"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
+    },
+    {
+      "projectName": "Name 14",
+      "icon": "@/public/svg/database.svg",
+      "projectType": "Database",
+      "year": 2024,
+      "names": ["Steve", "Sarah"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
+    },
+    {
+      "projectName": "Name 15",
+      "icon": "@/public/svg/database.svg",
+      "projectType": "Database",
+      "year": 2024,
+      "names": ["Steve", "Sarah"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
+    },
+    {
+      "projectName": "Name 16",
+      "icon": "@/public/svg/database.svg",
+      "projectType": "Database",
+      "year": 2024,
+      "names": ["Steve", "Sarah"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
+    },
+    {
+      "projectName": "Name 17",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
