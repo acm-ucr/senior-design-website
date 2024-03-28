@@ -1,7 +1,23 @@
 {
   "events": [
     {
-      "projectName": "Name",
+      "projectName": "Project 1",
+      "icon": "@/public/svg/database.svg",
+      "projectType": "Database",
+      "year": 2022,
+      "names": ["Steve", "Sarah"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
+    },
+    {
+      "projectName": "Project 2",
+      "icon": "@/public/svg/database.svg",
+      "projectType": "Database",
+      "year": 2023,
+      "names": ["Steve", "Sarah"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
+    },
+    {
+      "projectName": "Project 3",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
       "year": 2024,
@@ -17,26 +33,10 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
     {
-      "projectName": "Name",
+      "projectName": "Name1",
       "icon": "@/public/svg/database.svg",
       "projectType": "Database",
-      "year": 2024,
-      "names": ["Steve", "Sarah"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
-    },
-    {
-      "projectName": "Name",
-      "icon": "@/public/svg/database.svg",
-      "projectType": "Database",
-      "year": 2024,
-      "names": ["Steve", "Sarah"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
-    },
-    {
-      "projectName": "Name",
-      "icon": "@/public/svg/database.svg",
-      "projectType": "Database",
-      "year": 2024,
+      "year": 2022,
       "names": ["Steve", "Sarah"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nisl eget quam fringilla elementum et eu mi."
     },
