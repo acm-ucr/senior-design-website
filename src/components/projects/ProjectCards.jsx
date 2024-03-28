@@ -1,6 +1,6 @@
 import React from "react";
 import FakeData from "@/data/fakedata";
-import ProjectCard from "@/components/projectcard";
+import ProjectCard from "@/components/ProjectCard";
 import { useState } from "react";
 const PastProjects = ({
   searchBarText,
@@ -57,7 +57,7 @@ const PastProjects = ({
 
   return (
     <div className="bg-white flex justify-center items-center text-center flex-col py-8">
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  gap-14 ">
+      <div className="grid md:w-11/12 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 ml-10">
         {visibleProjects.slice(startIndex, endIndex).map((project, index) => (
           <ProjectCard project={project} key={index} />
         ))}
