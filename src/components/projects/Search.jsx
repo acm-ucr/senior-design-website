@@ -9,7 +9,6 @@ const Search = ({ selectedYears = [], onRemoveYear, setSearchBarText }) => {
   function handleSearch(term) {
     setSearchBarText(term);
     const params = new URLSearchParams(searchParams); // makes a copy of existing SearchParams.
-
     if (term) {
       params.set("query", term); // the existing search params' "query" property is set to the current term, overwriting any previous existing terms.
     } else {
