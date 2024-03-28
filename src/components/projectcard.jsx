@@ -2,33 +2,29 @@
 
 import React from "react";
 import Image from "next/image";
+import temp from "public/tempimage.png";
 
 const ProjectCard = ({ project }) => {
-  const { projectName, icon, year, names, description } = project;
+  const { projectName, year, names, description } = project;
 
   return (
-    <div className="flex-col justify-self-center justify-center items-center shadow-2xl  min-w-96 h-full w-96  rounded-md md:w-5/6 lg:w-7/12   sm:w-5/6 mt-3">
+    <div className="flex h-full w-11/12 flex-col justify-center items-center shadow-lg rounded-xl m-0 md:m-2 mt-3">
       <Image
-        src={icon}
+        src={temp}
         alt={projectName}
-        className="project-image self-center mx-auto "
-        width={150}
-        height={175}
-        style={{ alignSelf: "center" }}
+        className="w-full h-3/5 object-cover"
       />
 
-      <div className="project-details text-center">
-        <h2 className="project-name text-2xl font-bold mt-2">{projectName}</h2>
+      <div className="text-center font-raleway">
+        <h2 className="text-2xl font-bold mt-2">{projectName}</h2>
 
-        <p className="text-gray-400  text-xl -mt-2">{year}</p>
+        <p className="text-gray-400 text-xl -mt-2">{year}</p>
 
-        <div className="collaborators text-lg text-gray-400 -mt-3">
-          <p className="collaborators-text text-lg">{names.join(", ")}</p>
+        <div className="text-lg text-gray-400 -mt-3">
+          <p className="text-lg">{names.join(", ")}</p>
         </div>
         <div className="max-w-xs mx-auto mb-4 -mt-3">
-          <p className="project-description text-base   display: inline ">
-            {description}
-          </p>
+          <p className="text-base">{description}</p>
         </div>
       </div>
     </div>
