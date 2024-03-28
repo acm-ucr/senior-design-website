@@ -1,7 +1,7 @@
 import Welcome from "@/components/landing/Welcome";
 import About from "@/components/landing/About";
 import PastProjects from "@/components/landing/PastProjects";
-import ViewMore from "@/components/ViewMore";
+import Button from "@/components/Button";
 
 const Landing = () => {
   return (
@@ -9,7 +9,7 @@ const Landing = () => {
       <Welcome />
       <About />
       <PastProjects />
-      <ViewMore />
+      <Button text="View More" />
     </div>
   );
 };

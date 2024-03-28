@@ -1,16 +1,14 @@
 import Image from "next/image";
+import Button from "../Button";
 import bournsBuilding from "@/public/Bourns_Building.png";
 const Welcome = () => {
   return (
     <>
-      <div className="md:h-screen flex">
+      <div className="h-min-screen">
         <Image
           src={bournsBuilding}
-          width="100%"
-          height="100%"
           alt="bourns building"
-          objectFit="cover"
-          className="max-h-min bg-cover flex shrink-0 lg:-mt-96 lg:-mb-16"
+          className="w-full bg-cover object-cover "
         />
       </div>
       <div className="w-4/5 md:w-3/5 lg:w-2/5 absolute left-[13%] top-[18%] bg-[#fff] bg-opacity-80">
@@ -24,9 +22,9 @@ const Welcome = () => {
           problems.
         </p>
 
-        <button className="bg-buttons-orange text-white font-bold rounded-md hover:-translate-y-0.5 lg:mx-[15%] lg:p-2 lg:mb-5 lg:text-lg lg:w-1/4 md:mx-10 md:p-2 md:mb-3 md:text-md md:w-1/4 ml-9 py-1.5 mb-4 text-xs w-1/3">
-          PROJECTS
-        </button>
+        <div className="mr-24 md:mr-44">
+          <Button text="PROJECTS" />
+        </div>
       </div>
     </>
   );
