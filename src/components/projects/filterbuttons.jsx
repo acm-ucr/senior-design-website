@@ -7,7 +7,7 @@ function MakeList({ list, checkedcolor, handleSelection, selectedItems }) {
     <div className="absolute border rounded-md border-gray-500 mt-2 bg-white">
       {list.map(function (data) {
         return (
-          <div className="flex flex-row gap-2 m-2 px-3  " key={data}>
+          <div className="flex flex-row gap-2 m-2 px-3" key={data}>
             <input
               type="checkbox"
               className={`relative peer appearance-none w-4 h-4 bg-gray-300 rounded-sm mt-1   ${checkedcolor}`}
@@ -46,16 +46,6 @@ const Filterbuttons = ({ selectedYears, setSelectedYears }) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
-
-  // try {
-
-  // } catch (error) {
-  //   if (isDynamicServerError(error)) {
-  //     throw error;
-  //   }
-
-  //   // handle other errors
-  // }
 
   const currlist = ["2022-23", "2023-24", "2024-25"];
 
