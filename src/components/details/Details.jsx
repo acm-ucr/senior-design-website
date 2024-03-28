@@ -4,7 +4,7 @@ import img1 from "../../../public/tempimage.png";
 import img2 from "../../../public/image1.png";
 import FakeDetailsData from "@/data/fakedetailsdata";
 
-const Details = ({ year, projectName, teamMembers, type, logo }) => {
+const Details = ({ year, projectName, teamMembers }) => {
   const inspiration = FakeDetailsData[0].inspiration;
   const purpose = FakeDetailsData[0].purpose;
   const video = FakeDetailsData[0].video;
@@ -15,11 +15,9 @@ const Details = ({ year, projectName, teamMembers, type, logo }) => {
       </div>
       <div className="bg-white px-8 md:px-32 lg:px-32 xl:px-64">
         <Title
-          year={year}
-          projectName={projectName}
-          teamMembers={teamMembers}
-          type={type}
-          logo={logo}
+          year="2022-2023"
+          projectName="Project Name"
+          teamMembers="Minnie Bennett, Chadwick Clayton, Ralph Hayes, Bertha Meza"
         />
 
         <div className="flex items-center gap-1 pt-5">
