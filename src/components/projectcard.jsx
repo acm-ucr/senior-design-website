@@ -1,10 +1,8 @@
-// ProjectCard.js
-
 import React from "react";
 import Image from "next/image";
-import img1 from "../../public/stockphoto1.jpg";
-import img2 from "../../public/stockphoto2.jpg";
-import img3 from "../../public/stockphoto3.jpg";
+import img1 from "@/public/stockphoto1.jpg";
+import img2 from "@/public/stockphoto2.jpg";
+import img3 from "@/public/stockphoto3.jpg";
 
 const ProjectCard = ({ project, index }) => {
   const { projectName, year, names, description } = project;
