@@ -2,9 +2,10 @@ import React from "react";
 import FakeData from "@/data/fakedata";
 import ProjectCard from "@/components/projectcard";
 import { useState } from "react";
+
 const PastProjects = ({
   searchBarText,
-  selectedYears,
+  selectedYear = [],
   projectsPerPage,
   currentPage,
 }) => {
@@ -13,10 +14,10 @@ const PastProjects = ({
     for (let i = 0; i < FakeData.events.length; i++) {
       const currentData = FakeData.events[i];
 
-      if (selectedYears.length != 0) {
+      if (selectedYear.length != 0) {
         let matchYear = false;
-        for (let j = 0; j < selectedYears.length; j++) {
-          if (Number(selectedYears[j].substring(0, 4)) == currentData.year) {
+        for (let j = 0; j < selectedYear.length; j++) {
+          if (Number(selectedYear[j].substring(0, 4)) == currentData.year) {
             matchYear = true;
             break;
           }
@@ -59,7 +60,7 @@ const PastProjects = ({
     <div className="bg-white flex justify-center items-center text-center flex-col py-8">
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  gap-14 ">
         {visibleProjects.slice(startIndex, endIndex).map((project, index) => (
-          <ProjectCard project={project} key={index} />
+          <ProjectCard key={index} project={project} index={index} />
         ))}
       </div>
       <br />

@@ -85,10 +85,9 @@ const Filterbuttons = ({ selectedYears, setSelectedYears }) => {
         {open && !open1 ? (
           <button
             onClick={handleOpen}
-            className={`border border-buttons-blue
-            rounded-md px-2 h-8`}
+            className={`border border-buttons-blue rounded-md px-2 h-8`}
           >
-            <div className="flex flex-row p-0.5">
+            <div className="flex flex-row">
               <div
                 className={`text-buttons-blue
                 mr-4`}
