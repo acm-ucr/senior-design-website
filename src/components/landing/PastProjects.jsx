@@ -12,7 +12,7 @@ const PastProjects = () => {
       <div className="py-8 font-bold text-4xl">2022 - 2023</div>
       <div className="grid md:w-11/12 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 ml-10">
         {visibleProjects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={index} project={project} index={index} />
         ))}
       </div>
     </div>

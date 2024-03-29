@@ -1,16 +1,17 @@
-// ProjectCard.js
-
 import React from "react";
 import Image from "next/image";
-import temp from "public/tempimage.png";
+import img1 from "@/public/stockphoto1.jpg";
+import img2 from "@/public/stockphoto2.jpg";
+import img3 from "@/public/stockphoto3.jpg";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
   const { projectName, year, names, description } = project;
+  const images = [img1, img2, img3];
 
   return (
     <div className="flex h-full w-11/12 flex-col justify-center items-center shadow-lg rounded-xl m-0 md:m-2 mt-3 overflow-hidden">
       <Image
-        src={temp}
+        src={images[index % 3]}
         alt={projectName}
         className="w-full h-3/5 object-cover"
       />
