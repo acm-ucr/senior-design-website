@@ -9,7 +9,9 @@ const Landing = () => {
       <Welcome />
       <About />
       <PastProjects />
-      <Button text="View More" />
+      <div className="w-full flex justify-center mt-2">
+        <Button text="View More" />
+      </div>
     </div>
   );
 };

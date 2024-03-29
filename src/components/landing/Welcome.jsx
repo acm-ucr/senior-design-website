@@ -22,7 +22,7 @@ const Welcome = () => {
           problems.
         </p>
 
-        <div className="mr-24 md:mr-44">
+        <div className="w-3/5 flex justify-center">
           <Button text="PROJECTS" />
         </div>
       </div>
