@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
   const { projectName, year, names, description } = project;
 
   return (
-    <div className="flex h-full w-11/12 flex-col justify-center items-center shadow-lg rounded-xl m-0 md:m-2 mt-3">
+    <div className="flex h-full w-11/12 flex-col justify-center items-center shadow-lg rounded-xl m-0 md:m-2 mt-3 overflow-hidden">
       <Image
         src={temp}
         alt={projectName}
