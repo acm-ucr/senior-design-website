@@ -3,7 +3,7 @@ import bournsBuilding from "@/public/Bourns_Building.png";
 
 const PastProjects = () => {
   return (
-    <>
+    <div>
       <div className="h-72 w-full absolute flex justify-center">
         <p className="text-xl font-black text-white absolute bottom-0 z-4">
           PROJECTS
@@ -15,7 +15,7 @@ const PastProjects = () => {
         src={bournsBuilding}
         alt="bourns building"
       />
-    </>
+    </div>
   );
 };
 
