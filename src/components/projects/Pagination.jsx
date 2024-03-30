@@ -1,27 +1,48 @@
 "use client";
-import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
-const Pagination = (totalPages) => {
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
+import projects from "@/data/projects.json";
+
+const Pagination = () => {
+  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const currentPage = Number(searchParams.get("page")) || 1;
 
-  const createPageURL = (pageNumber) => {
-    const params = new URLSearchParams(searchParams);
-    params.set("page", pageNumber.toString());
-    return `${pathname}?${params.toString()}`;
-  };
+  const createQueryString = useCallback(
+    (name, value) => {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set(name, value);
 
-  const paginationLinks = [];
-  for (let i = 1; i <= totalPages; i++) {
-    paginationLinks.push(
-      <Link key={i} href={createPageURL(i)}>
-        <a className={currentPage === i ? "active" : ""}>{i}</a>
-      </Link>
-    );
-  }
+      return params.toString();
+    },
+    [searchParams]
+  );
 
-  return <div className="pagination">{paginationLinks}</div>;
+  const index = parseInt(searchParams.get("page") ?? 0);
+  const total = Math.floor(projects.length / 12);
+
+  return (
+    <div className="flex gap-3 my-4">
+      <button
+        className="bg-senior-yellow-100 px-3 py-2 rounded text-white font-semibold text-lg disabled:opacity-75"
+        disabled={index <= 0}
+        onClick={() =>
+          router.push(pathname + "?" + createQueryString("page", index - 1))
+        }
+      >
+        Previous
+      </button>
+      <button
+        className="bg-senior-yellow-100 px-3 py-2 rounded text-white font-semibold text-lg disabled:opacity-75"
+        disabled={index >= total}
+        onClick={() =>
+          router.push(pathname + "?" + createQueryString("page", index + 1))
+        }
+      >
+        Next
+      </button>
+    </div>
+  );
 };
 
 export default Pagination;

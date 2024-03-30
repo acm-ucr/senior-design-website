@@ -1,0 +1,15 @@
+[
+  {
+    "id": 0,
+    "name": "Air Quality",
+    "year": 2024,
+    "members": [
+      "Paulian Le",
+      "Divyank Shah",
+      "Rania Saber",
+      "Sharanjeet Singh"
+    ],
+    "repo": "wporter/air-quality",
+    "description": "Omega Initiative - all about air quality!"
+  }
+]

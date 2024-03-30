@@ -5,7 +5,7 @@ import ViewMore from "@/components/ViewMore";
 
 const Landing = () => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col items-center justify-center">
       <Welcome />
       <About />
       <PastProjects />
