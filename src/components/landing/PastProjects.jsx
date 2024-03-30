@@ -6,8 +6,8 @@ const PastProjects = () => {
 
   return (
     <div className="grid grid-cols-4 gap-6 w-11/12">
-      {cards.map(({ name, names, year }, index) => (
-        <Project key={index} name={name} names={names} year={year} />
+      {cards.map(({ name, members, year, id }) => (
+        <Project key={id} name={name} names={members} year={year} id={id} />
       ))}
     </div>
   );

@@ -10,13 +10,13 @@ const Cards = () => {
   const search = searchParams.get("search") ?? "";
 
   const cards = projects
-    .filter(({ name }) => name.includes(search))
+    .filter(({ name }) => name.toLowerCase().includes(search))
     .slice(12 * page, 12 * page + 12);
 
   return (
-    <div className="grid grid-cols-4 gap-6">
-      {cards.map(({ name, names, year }, index) => (
-        <Project key={index} name={name} names={names} year={year} />
+    <div className="grid grid-cols-3 gap-6 w-10/12">
+      {cards.map(({ name, members, year, id }) => (
+        <Project key={id} id={id} name={name} names={members} year={year} />
       ))}
     </div>
   );
