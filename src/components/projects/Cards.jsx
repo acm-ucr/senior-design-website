@@ -15,14 +15,8 @@ const Cards = () => {
 
   return (
     <div className="grid grid-cols-4 gap-6">
-      {cards.map(({ name, names, description, year }, index) => (
-        <Project
-          key={index}
-          name={name}
-          names={names}
-          year={year}
-          description={description}
-        />
+      {cards.map(({ name, names, year }, index) => (
+        <Project key={index} name={name} names={names} year={year} />
       ))}
     </div>
   );
