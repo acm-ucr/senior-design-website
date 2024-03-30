@@ -11,5 +11,88 @@
     ],
     "repo": "wporter/air-quality",
     "description": "Omega Initiative - all about air quality!"
+  },
+  {
+    "id": 1,
+    "name": "UCR TA Hiring Website",
+    "year": 2024,
+    "members": ["Vicki Vo", "Adlai Morales-Bravo", "lay6351", "ethiopiae"],
+    "repo": "UCR-Senior-Design/course-project-rvea",
+    "description": "course-project-rvea created by GitHub Classroom"
+  },
+  {
+    "id": 2,
+    "name": "MedShare Web App",
+    "year": 2024,
+    "members": ["Megan Chan", "Dave Quichocho", "Jingbo Su", "Jenny Quan"],
+    "repo": "UCR-Senior-Design/course-project-fries",
+    "description": "course-project-fries created by GitHub Classroom"
+  },
+  {
+    "id": 3,
+    "name": "Resume 322",
+    "year": 2024,
+    "members": ["Chaiwat Wongsatjachock", "Dennis Santoso", "Lester Lien"],
+    "repo": "UCR-Senior-Design/course-project-dvl",
+    "description": "course-project-dvl created by GitHub Classroom"
+  },
+  {
+    "id": 4,
+    "name": "course-project-og-squad",
+    "year": 2024,
+    "members": [
+      "Jeralson Paredes",
+      "Karl Nueckel",
+      "Nasser Ben",
+      "mfatima1",
+      "Joy Haddad"
+    ],
+    "repo": "UCR-Senior-Design/course-project-og-squad",
+    "description": "Snapchef (Team: OG Squad)"
+  },
+  {
+    "id": 5,
+    "name": "Palz",
+    "year": 2024,
+    "members": ["Joshua Phak", "cchua00", "Alan Xu-Zhang"],
+    "repo": "UCR-Senior-Design/Palz",
+    "description": "course-project-i-m-not-creative created by GitHub Classroom"
+  },
+  {
+    "id": 6,
+    "name": "course-project-air-police",
+    "year": 2024,
+    "members": ["Joseph Chang", "cgeor015", "Harrison Cooper", "alexh-77"],
+    "repo": "UCR-Senior-Design/course-project-air-police",
+    "description": "course-project-air-police created by GitHub Classroom"
+  },
+  {
+    "id": 7,
+    "name": "friendify",
+    "year": 2024,
+    "members": ["Vinay Srinivasan"],
+    "repo": "UCR-Senior-Design/friendify",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "name": "Gender Equality Chatbot",
+    "year": 2024,
+    "members": [
+      "Samarth Srinivasa",
+      "David Ryan",
+      "Surabhi Tadvalkar",
+      "angelikab028"
+    ],
+    "repo": "UCR-Senior-Design/course-project-fifty-fifty",
+    "description": "course-project-fifty-fifty created by GitHub Classroom"
+  },
+  {
+    "id": 9,
+    "name": "Friendify",
+    "year": 2024,
+    "members": ["vinmart011", "Vinay Srinivasan", "Jason Giese", "ccalv013"],
+    "repo": "UCR-Senior-Design/course-project-good-team",
+    "description": "course-project-good-team created by GitHub Classroom"
   }
 ]
