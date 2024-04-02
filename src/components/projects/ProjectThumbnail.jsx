@@ -5,13 +5,13 @@ const PastProjects = () => {
   return (
     <div>
       <div className="h-72 w-full absolute flex justify-center">
-        <p className="text-xl font-black text-white absolute bottom-0 z-4">
+        <p className="text-3xl font-black text-white absolute bottom-0 z-10">
           PROJECTS
         </p>
       </div>
       <div className="h-72 w-full bg-black absolute opacity-40 z-2" />
       <Image
-        className="h-72 w-full object-cover object-bottom z-1"
+        className="h-72 w-screen object-cover z-1"
         src={bournsBuilding}
         alt="bourns building"
       />

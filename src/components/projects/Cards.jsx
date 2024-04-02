@@ -14,7 +14,7 @@ const Cards = () => {
     .slice(12 * page, 12 * page + 12);
 
   return (
-    <div className="grid grid-cols-3 gap-6 w-10/12">
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 w-10/12">
       {cards.map(({ name, members, year, id }) => (
         <Project key={id} id={id} name={name} names={members} year={year} />
       ))}
