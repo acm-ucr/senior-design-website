@@ -94,5 +94,21 @@
     "members": ["vinmart011", "Vinay Srinivasan", "Jason Giese", "ccalv013"],
     "repo": "UCR-Senior-Design/course-project-good-team",
     "description": "course-project-good-team created by GitHub Classroom"
+  },
+  {
+    "id": 10,
+    "name": "A Million Thanks",
+    "year": 2020,
+    "members": ["Jia Xie", "Xichao Wang", "AlisonWonderland", "July"],
+    "repo": "CS-UCR/homeless-baby-bear",
+    "description": "Web application for A Million Thanks Inc."
+  },
+  {
+    "id": 11,
+    "name": "Capitalizer",
+    "year": 2021,
+    "members": ["Siena Seung Eun Ha", "Nathan D. Brennan", "Jason Chan"],
+    "repo": "CS178A-B/final-project-circularly-dependent",
+    "description": "final-project-circularly-dependent created by GitHub Classroom"
   }
 ]
