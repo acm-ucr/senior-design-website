@@ -15,9 +15,9 @@ const raleway = Raleway({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${raleway.className}`}>
+      <body className={`${raleway.className} flex flex-col h-screen`}>
         <Navigation />
-        <div className="w-full mt-14 md:mt-16">{children}</div>
+        <div className="w-full mt-14 md:mt-16 h-full">{children}</div>
         <Footer />
       </body>
     </html>
