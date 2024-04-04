@@ -9,7 +9,7 @@ const NotFound = () => {
           href="/"
           className="bg-buttons-orange text-white font-bold rounded-md px-3 py-2 no-underline hover:opacity-75"
         >
-          PROJECTS
+          Home
         </Link>
       </div>
     </div>
