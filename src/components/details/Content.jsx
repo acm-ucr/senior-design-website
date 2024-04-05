@@ -36,7 +36,7 @@ const Content = ({ id }) => {
   }, [link]);
 
   return (
-    <div className="flex items-center justify-center flex-col">
+    <div className="min-w-full flex items-center justify-center flex-col flex-auto">
       <div className="relative h-96 w-full">
         <Image src={img2} layout="fill" objectFit="cover" alt="projectImage" />
       </div>
