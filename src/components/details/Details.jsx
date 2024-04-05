@@ -6,11 +6,7 @@ const Details = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
 
-  return (
-    <div>
-      <Content id={id} />
-    </div>
-  );
+  return <Content id={id} />;
 };
 
 export default Details;
