@@ -68,14 +68,6 @@
   },
   {
     "id": 7,
-    "name": "friendify",
-    "year": 2024,
-    "members": ["Vinay Srinivasan"],
-    "repo": "UCR-Senior-Design/friendify",
-    "description": ""
-  },
-  {
-    "id": 8,
     "name": "Gender Equality Chatbot",
     "year": 2024,
     "members": [
@@ -88,15 +80,7 @@
     "description": "course-project-fifty-fifty created by GitHub Classroom"
   },
   {
-    "id": 9,
-    "name": "Friendify",
-    "year": 2024,
-    "members": ["vinmart011", "Vinay Srinivasan", "Jason Giese", "ccalv013"],
-    "repo": "UCR-Senior-Design/course-project-good-team",
-    "description": "course-project-good-team created by GitHub Classroom"
-  },
-  {
-    "id": 10,
+    "id": 8,
     "name": "A Million Thanks",
     "year": 2020,
     "members": ["Jia Xie", "Xichao Wang", "AlisonWonderland", "July"],
@@ -104,7 +88,7 @@
     "description": "Web application for A Million Thanks Inc."
   },
   {
-    "id": 11,
+    "id": 9,
     "name": "Capitalizer",
     "year": 2021,
     "members": ["Siena Seung Eun Ha", "Nathan D. Brennan", "Jason Chan"],
