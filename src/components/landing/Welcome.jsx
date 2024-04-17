@@ -9,7 +9,7 @@ const Welcome = () => {
         alt="Winston Chung Hall Patio"
         className="bg-cover object-cover h-screen"
       />
-      <div className="w-4/5 md:w-1/2 absolute left-10 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 p-8 rounded">
+      <div className="w-4/5 md:w-1/2 absolute left-10 top-1/2 -translate-y-1/2 bg-white/80  p-8 rounded">
         <p className="flex justify-center md:justify-start font-bold lg:text-4xl md:text-2xl">
           UCR Senior Designs
         </p>
